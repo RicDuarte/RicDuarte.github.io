@@ -100,13 +100,6 @@ nav a:hover {
   color: #d0d0d0;
 }
 
-/* HERO IMAGES */
-
-.home-hero {
-  background-image:
-    url('../images/lastkingdom.jpg');
-}
-
 .portfolio-hero {
   background-image:
     url('../images/reacher.jpg');
@@ -115,27 +108,24 @@ nav a:hover {
 /* MAIN */
 
 main {
-  padding: 30px 50px 180px;
-  overflow: visible;
+  padding: 30px 50px 120px;
 }
 
 /* YEAR SECTION */
 
 .year-section {
-  margin-bottom: 10px;
-  overflow: visible;
+  margin-bottom: -10px;
 }
 
 .year-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: -5px;
 }
 
 /* CAROUSEL */
 
 .carousel-wrapper {
   position: relative;
-  overflow: visible;
 }
 
 .carousel {
@@ -150,13 +140,9 @@ main {
   scrollbar-width: none;
 
   padding:
-    40px
+    35px
     30px
-    240px;
-
-  position: relative;
-
-  overflow: visible;
+    180px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -178,12 +164,10 @@ main {
     z-index 0.25s ease;
 
   z-index: 1;
-
-  overflow: visible;
 }
 
 .card:hover {
-  transform: scale(1.10);
+  transform: scale(1.08);
   z-index: 500;
 }
 
@@ -210,20 +194,18 @@ main {
 
   background: #181818;
 
-  padding: 16px;
+  padding: 18px;
 
   border-radius: 0 0 8px 8px;
 
   opacity: 0;
 
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 
-  transition: 0.25s ease;
+  transition: 0.22s ease;
 
   box-shadow:
     0 10px 30px rgba(0,0,0,0.7);
-
-  overflow: visible;
 
   min-height: 120px;
 }
@@ -238,12 +220,12 @@ main {
 .top-row {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 
   margin-bottom: 14px;
 }
 
-/* PLAY BUTTON */
+/* PLAY */
 
 .play-btn {
   width: 42px;
@@ -278,22 +260,23 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
-
-  font-size: 0.85rem;
 }
 
 .age {
   border: 1px solid rgba(255,255,255,0.4);
 
-  padding: 3px 8px;
+  padding: 4px 8px;
 
   border-radius: 4px;
 
   color: #d0d0d0;
+
+  font-size: 0.82rem;
 }
 
 .type {
   color: #d0d0d0;
+  font-size: 0.92rem;
 }
 
 /* GENRES */
@@ -303,7 +286,7 @@ main {
   flex-wrap: wrap;
   gap: 6px;
 
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .genre {
@@ -327,9 +310,7 @@ main {
   align-items: center;
   gap: 6px;
 
-  font-size: 0.85rem;
-
-  color: white;
+  font-size: 0.84rem;
 }
 
 .badge-icon {
@@ -340,12 +321,12 @@ main {
 
 .arrow {
   position: absolute;
-  top: 38%;
+  top: 37%;
 
   transform: translateY(-50%);
 
-  width: 50px;
-  height: 100px;
+  width: 52px;
+  height: 110px;
 
   border: none;
 
@@ -380,32 +361,4 @@ footer {
   text-align: center;
   padding: 50px;
   color: #777;
-}
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-  .hero {
-    height: 45vh;
-    padding: 40px;
-  }
-
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  nav {
-    gap: 20px;
-  }
-
-  .card {
-    min-width: 220px;
-    max-width: 220px;
-  }
-
 }
