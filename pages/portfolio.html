@@ -12,52 +12,156 @@
 
 <body>
 
-<header>
-  <h1>Portefólio</h1>
-  <p>Projetos de tradução audiovisual</p>
-</header>
-
 <nav>
   <a href="../index.html">Sobre Mim</a>
   <a href="portfolio.html">Portefólio</a>
   <a href="contactos.html">Contactos</a>
 </nav>
 
-<div class="container">
+<section class="hero">
 
-  <h2>2026</h2>
+  <div class="hero-content">
+    <h1>PORTFÓLIO</h1>
 
-  <div class="portfolio-grid">
-
-    <div class="card">
-      <img src="../images/reacher.jpg" alt="Reacher">
-
-      <div class="card-overlay">
-        <h3>Reacher</h3>
-        <p>Revisão</p>
-        <p>Prime Video</p>
-        <p>2026</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="../images/lastkingdom.jpg" alt="The Last Kingdom">
-
-      <div class="card-overlay">
-        <h3>The Last Kingdom</h3>
-        <p>Tradução</p>
-        <p>Netflix</p>
-        <p>2025</p>
-      </div>
-    </div>
-
+    <p>
+      Tradução, revisão e controlo de qualidade
+      linguística para plataformas de streaming.
+    </p>
   </div>
 
-</div>
+</section>
+
+<main>
+
+  <!-- 2026 -->
+
+  <section class="year-section">
+
+    <h2>2026</h2>
+
+    <div class="carousel-wrapper">
+
+      <button class="arrow arrow-left"
+        onclick="scrollCarousel('carousel2026', -800)">
+        ‹
+      </button>
+
+      <div class="carousel" id="carousel2026">
+
+        <div class="card">
+          <img src="../images/reacher.jpg">
+
+          <div class="overlay">
+            <h3>Reacher</h3>
+            <p>Revisão</p>
+            <p>Prime Video</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../images/lastkingdom.jpg">
+
+          <div class="overlay">
+            <h3>The Last Kingdom</h3>
+            <p>Tradução</p>
+            <p>Netflix</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../images/reacher.jpg">
+
+          <div class="overlay">
+            <h3>The Witcher</h3>
+            <p>Revisão</p>
+            <p>Netflix</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../images/lastkingdom.jpg">
+
+          <div class="overlay">
+            <h3>Black Mirror</h3>
+            <p>Tradução</p>
+            <p>Netflix</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="arrow arrow-right"
+        onclick="scrollCarousel('carousel2026', 800)">
+        ›
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- 2025 -->
+
+  <section class="year-section">
+
+    <h2>2025</h2>
+
+    <div class="carousel-wrapper">
+
+      <button class="arrow arrow-left"
+        onclick="scrollCarousel('carousel2025', -800)">
+        ‹
+      </button>
+
+      <div class="carousel" id="carousel2025">
+
+        <div class="card">
+          <img src="../images/lastkingdom.jpg">
+
+          <div class="overlay">
+            <h3>Vikings</h3>
+            <p>Revisão</p>
+            <p>Netflix</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../images/reacher.jpg">
+
+          <div class="overlay">
+            <h3>Lupin</h3>
+            <p>Tradução</p>
+            <p>Netflix</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../images/lastkingdom.jpg">
+
+          <div class="overlay">
+            <h3>Narcos</h3>
+            <p>Revisão</p>
+            <p>Netflix</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="arrow arrow-right"
+        onclick="scrollCarousel('carousel2025', 800)">
+        ›
+      </button>
+
+    </div>
+
+  </section>
+
+</main>
 
 <footer>
   © 2026 Ricardo Duarte
 </footer>
+
+<script src="../scripts/script.js"></script>
 
 </body>
 </html>
