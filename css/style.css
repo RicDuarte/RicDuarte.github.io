@@ -119,11 +119,6 @@ nav a:hover {
     url('../images/reacher.jpg');
 }
 
-.contactos-hero {
-  background-image:
-    url('../images/lastkingdom.jpg');
-}
-
 /* MAIN */
 
 main {
@@ -156,6 +151,8 @@ main {
   scroll-behavior: smooth;
 
   scrollbar-width: none;
+
+  padding: 30px 20px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -168,9 +165,9 @@ main {
   min-width: 180px;
   max-width: 180px;
 
-  border-radius: 6px;
+  border-radius: 8px;
 
-  overflow: hidden;
+  overflow: visible;
 
   position: relative;
 
@@ -182,12 +179,10 @@ main {
 }
 
 .card:hover {
-  transform: scale(1.15);
+  transform: scale(1.25);
 
-  z-index: 20;
+  z-index: 50;
 }
-
-/* POSTER */
 
 .card img {
   width: 100%;
@@ -196,6 +191,8 @@ main {
 
   object-fit: cover;
 
+  border-radius: 8px;
+
   display: block;
 }
 
@@ -203,41 +200,137 @@ main {
 
 .overlay {
   position: absolute;
-  inset: 0;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  left: 0;
+  right: 0;
+  top: 100%;
+
+  background: #181818;
 
   padding: 15px;
 
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.95),
-    rgba(0,0,0,0)
-  );
+  border-radius: 0 0 8px 8px;
 
   opacity: 0;
 
+  transform: translateY(-10px);
+
   transition: 0.25s ease;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.6);
 }
 
 .card:hover .overlay {
   opacity: 1;
+
+  transform: translateY(0);
 }
 
-.overlay h3 {
-  font-size: 1rem;
+/* CONTROLS */
 
-  margin-bottom: 6px;
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
 }
 
-.overlay p {
-  font-size: 0.8rem;
+.left-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.control-btn {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+
+  border: 2px solid rgba(255,255,255,0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.9rem;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.control-btn:hover {
+  border-color: white;
+  background: rgba(255,255,255,0.1);
+}
+
+/* META */
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 12px;
+
+  font-size: 0.75rem;
+}
+
+.age {
+  border: 1px solid rgba(255,255,255,0.4);
+
+  padding: 2px 6px;
+
+  border-radius: 4px;
 
   color: #d0d0d0;
+}
 
-  margin-bottom: 2px;
+.type {
+  color: #d0d0d0;
+}
+
+/* GENRES */
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-bottom: 12px;
+}
+
+.genre {
+  color: #d0d0d0;
+  font-size: 0.75rem;
+}
+
+.genre::after {
+  content: '•';
+
+  margin-left: 6px;
+}
+
+.genre:last-child::after {
+  display: none;
+}
+
+/* BADGE */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 0.75rem;
+
+  color: white;
+}
+
+.badge-icon {
+  color: #46d369;
 }
 
 /* ARROWS */
@@ -259,7 +352,7 @@ main {
 
   cursor: pointer;
 
-  z-index: 50;
+  z-index: 100;
 
   font-size: 2rem;
 
@@ -278,30 +371,6 @@ main {
   right: 0;
 }
 
-/* CONTENT */
-
-.content {
-  max-width: 1000px;
-
-  margin: auto;
-
-  padding: 80px 40px;
-}
-
-.content h2 {
-  font-size: 2rem;
-
-  margin-bottom: 25px;
-}
-
-.content p {
-  color: #c0c0c0;
-
-  line-height: 1.9;
-
-  margin-bottom: 25px;
-}
-
 /* FOOTER */
 
 footer {
@@ -310,33 +379,4 @@ footer {
   padding: 50px;
 
   color: #777;
-}
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-  .hero {
-    height: 45vh;
-
-    padding: 40px;
-  }
-
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  nav {
-    gap: 20px;
-  }
-
-  .card {
-    min-width: 130px;
-    max-width: 130px;
-  }
-
 }
