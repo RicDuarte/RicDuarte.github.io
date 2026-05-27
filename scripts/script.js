@@ -23,28 +23,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const imageContainer = card.querySelector('.card-image');
 
+      const overlay = card.querySelector('.overlay');
+
       let iframe = imageContainer.querySelector('iframe');
 
-      /* IF VIDEO DOESN'T EXIST */
+      /* VIDEO DOESN'T EXIST */
 
       if (!iframe) {
-
-        /* Hide image */
 
         const image = imageContainer.querySelector('img');
 
         image.style.display = 'none';
 
-        /* Create iframe */
-
         iframe = document.createElement('iframe');
 
         iframe.src =
           'https://www.youtube.com/embed/ddT_eY7Mlg4?autoplay=1&rel=0';
-
-        iframe.width = '100%';
-
-        iframe.height = '185';
 
         iframe.allow =
           'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
@@ -55,13 +49,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         imageContainer.appendChild(iframe);
 
-        /* CHANGE BUTTON */
+        /* BUTTON */
 
         button.innerHTML = '❚❚';
 
+        /* ALLOW YOUTUBE CLICKS */
+
+        overlay.classList.add('video-active');
+
       }
 
-      /* IF VIDEO EXISTS -> REMOVE */
+      /* REMOVE VIDEO */
 
       else {
 
@@ -72,6 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
         image.style.display = 'block';
 
         button.innerHTML = '▶';
+
+        overlay.classList.remove('video-active');
 
       }
 
