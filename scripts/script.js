@@ -8,3 +8,24 @@ function scrollCarousel(id, amount) {
   });
 
 }
+
+/* PLAY BUTTON */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const playButtons = document.querySelectorAll('.play-btn');
+
+  playButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+      window.open(
+        'https://www.youtube.com/watch?v=69XoA7a0Gqs',
+        '_blank'
+      );
+
+    });
+
+  });
+
+});
