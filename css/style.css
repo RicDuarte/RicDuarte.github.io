@@ -213,7 +213,8 @@ main {
   opacity: 1;
 }
 
-.card img {
+.card img,
+.card iframe {
   width: 100%;
 
   height: 185px;
@@ -223,6 +224,8 @@ main {
   object-position: top;
 
   display: block;
+
+  border: none;
 
   transition: transform 0.35s ease;
 }
