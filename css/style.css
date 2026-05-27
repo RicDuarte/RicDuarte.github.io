@@ -22,7 +22,6 @@ nav {
   z-index: 999;
 
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 50px;
 
@@ -40,6 +39,7 @@ nav a {
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
+
   transition: 0.3s;
 }
 
@@ -50,41 +50,76 @@ nav a:hover {
 /* HERO */
 
 .hero {
-  height: 70vh;
+  height: 55vh;
 
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 
   padding: 80px;
 
-  background:
-    linear-gradient(
-      to right,
-      rgba(0,0,0,0.95) 20%,
-      rgba(0,0,0,0.4)
-    ),
-    url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1974&auto=format&fit=crop');
+  position: relative;
 
   background-size: cover;
   background-position: center;
 }
 
+.hero::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(11,11,11,1),
+      rgba(11,11,11,0.2)
+    ),
+    linear-gradient(
+      to right,
+      rgba(11,11,11,0.95),
+      rgba(11,11,11,0.3)
+    );
+}
+
 .hero-content {
+  position: relative;
+  z-index: 2;
+
   max-width: 700px;
 }
 
 .hero h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 800;
-  letter-spacing: -5px;
+
+  letter-spacing: -4px;
 
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 1.3rem;
-  line-height: 1.7;
+  font-size: 1.2rem;
   color: #d0d0d0;
+
+  line-height: 1.7;
+}
+
+/* HERO ESPECÍFICOS */
+
+.home-hero {
+  background-image:
+    url('../images/lastkingdom.jpg');
+}
+
+.portfolio-hero {
+  background-image:
+    url('../images/reacher.jpg');
+}
+
+.contactos-hero {
+  background-image:
+    url('../images/lastkingdom.jpg');
 }
 
 /* MAIN */
@@ -115,6 +150,7 @@ main {
   gap: 15px;
 
   overflow-x: auto;
+
   scroll-behavior: smooth;
 
   scrollbar-width: none;
@@ -127,10 +163,12 @@ main {
 /* CARD */
 
 .card {
-  min-width: 220px;
+  min-width: 180px;
+
   position: relative;
 
   border-radius: 12px;
+
   overflow: hidden;
 
   flex-shrink: 0;
@@ -140,11 +178,17 @@ main {
 
 .card:hover {
   transform: scale(1.05);
-  z-index: 5;
+
+  z-index: 10;
 }
 
 .card img {
   width: 100%;
+
+  aspect-ratio: 2 / 3;
+
+  object-fit: cover;
+
   display: block;
 }
 
@@ -164,9 +208,10 @@ main {
   flex-direction: column;
   justify-content: flex-end;
 
-  padding: 20px;
+  padding: 18px;
 
   opacity: 0;
+
   transition: 0.3s ease;
 }
 
@@ -175,14 +220,15 @@ main {
 }
 
 .overlay h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 8px;
 }
 
 .overlay p {
-  font-size: 0.9rem;
   color: #d0d0d0;
-  margin-bottom: 3px;
+  font-size: 0.85rem;
+
+  margin-bottom: 4px;
 }
 
 /* ARROWS */
@@ -190,6 +236,7 @@ main {
 .arrow {
   position: absolute;
   top: 50%;
+
   transform: translateY(-50%);
 
   width: 50px;
@@ -198,29 +245,56 @@ main {
   border: none;
   border-radius: 50%;
 
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.8);
+
   color: white;
 
   cursor: pointer;
 
-  z-index: 20;
+  z-index: 50;
 
   font-size: 1.5rem;
 }
 
 .arrow-left {
-  left: -25px;
+  left: -20px;
 }
 
 .arrow-right {
-  right: -25px;
+  right: -20px;
+}
+
+/* CONTENT */
+
+.content {
+  max-width: 1000px;
+
+  margin: auto;
+
+  padding: 80px 40px;
+}
+
+.content h2 {
+  font-size: 2rem;
+
+  margin-bottom: 25px;
+}
+
+.content p {
+  color: #c0c0c0;
+
+  line-height: 1.8;
+
+  margin-bottom: 25px;
 }
 
 /* FOOTER */
 
 footer {
   text-align: center;
+
   padding: 60px;
+
   color: #777;
 }
 
@@ -229,20 +303,25 @@ footer {
 @media (max-width: 768px) {
 
   .hero {
-    height: 60vh;
+    height: 45vh;
+
     padding: 40px;
   }
 
   .hero h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .hero p {
     font-size: 1rem;
   }
 
+  nav {
+    gap: 20px;
+  }
+
   .card {
-    min-width: 160px;
+    min-width: 140px;
   }
 
 }
