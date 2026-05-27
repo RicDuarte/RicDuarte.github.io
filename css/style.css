@@ -88,6 +88,7 @@ nav a:hover {
 .hero-content {
   position: relative;
   z-index: 2;
+
   max-width: 650px;
 }
 
@@ -189,6 +190,10 @@ main {
   overflow: hidden;
 
   border-radius: 10px 10px 0 0;
+
+  z-index: 5;
+
+  background: black;
 }
 
 .card-image::after {
@@ -207,6 +212,8 @@ main {
   opacity: 0;
 
   transition: 0.25s ease;
+
+  pointer-events: none;
 }
 
 .card:hover .card-image::after {
@@ -242,6 +249,8 @@ main {
   left: 0;
   right: 0;
   top: 100%;
+
+  z-index: 10;
 
   background:
     linear-gradient(
@@ -307,6 +316,8 @@ main {
   flex-shrink: 0;
 
   transition: 0.22s ease;
+
+  user-select: none;
 }
 
 .play-btn:hover {
@@ -357,6 +368,7 @@ main {
 
 .genre::after {
   content: '•';
+
   margin-left: 6px;
 }
 
@@ -410,6 +422,32 @@ main {
   background: rgba(20,20,20,0.95);
 }
 
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+/* YOUTUBE IFRAME */
+
+.card iframe {
+  width: 100%;
+
+  height: 185px;
+
+  border: none;
+
+  display: block;
+
+  position: relative;
+
+  z-index: 20;
+
+  background: black;
+}
+
 /* FOOTER */
 
 footer {
@@ -418,4 +456,32 @@ footer {
   padding: 50px;
 
   color: #777;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: 45vh;
+    padding: 40px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  .card {
+    min-width: 220px;
+    max-width: 220px;
+  }
+
 }
