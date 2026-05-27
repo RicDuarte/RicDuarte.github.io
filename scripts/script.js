@@ -9,7 +9,7 @@ function scrollCarousel(id, amount) {
 
 }
 
-/* PLAY TRAILER INSIDE CARD */
+/* VIDEO PLAYER */
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -23,23 +23,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const imageContainer = card.querySelector('.card-image');
 
-      /* Prevent duplicate iframe */
+      let iframe = imageContainer.querySelector('iframe');
 
-      if (imageContainer.querySelector('iframe')) {
-        return;
+      /* IF VIDEO DOESN'T EXIST */
+
+      if (!iframe) {
+
+        /* Hide image */
+
+        const image = imageContainer.querySelector('img');
+
+        image.style.display = 'none';
+
+        /* Create iframe */
+
+        iframe = document.createElement('iframe');
+
+        iframe.src =
+          'https://www.youtube.com/embed/ddT_eY7Mlg4?autoplay=1&rel=0';
+
+        iframe.width = '100%';
+
+        iframe.height = '185';
+
+        iframe.allow =
+          'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+
+        iframe.allowFullscreen = true;
+
+        iframe.frameBorder = '0';
+
+        imageContainer.appendChild(iframe);
+
+        /* CHANGE BUTTON */
+
+        button.innerHTML = '❚❚';
+
       }
 
-      imageContainer.innerHTML = `
-        <iframe
-          width="100%"
-          height="185"
-          src="https://www.youtube.com/embed/ddT_eY7Mlg4?autoplay=1&mute=0&rel=0"
-          title="Trailer"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-          allowfullscreen>
-        </iframe>
-      `;
+      /* IF VIDEO EXISTS -> REMOVE */
+
+      else {
+
+        iframe.remove();
+
+        const image = imageContainer.querySelector('img');
+
+        image.style.display = 'block';
+
+        button.innerHTML = '▶';
+
+      }
 
     });
 
