@@ -485,3 +485,17 @@ footer {
   }
 
 }
+
+/* VIDEO ACTIVE */
+
+.overlay.video-active {
+
+  pointer-events: none;
+
+}
+
+.overlay.video-active .play-btn {
+
+  pointer-events: auto;
+
+}
