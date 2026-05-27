@@ -122,13 +122,13 @@ nav a:hover {
 /* MAIN */
 
 main {
-  padding: 30px 50px 80px;
+  padding: 30px 50px 120px;
 }
 
 /* YEAR SECTION */
 
 .year-section {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .year-section h2 {
@@ -144,15 +144,17 @@ main {
 
 .carousel {
   display: flex;
-  gap: 10px;
+  gap: 14px;
 
   overflow-x: auto;
+
+  overflow-y: visible;
 
   scroll-behavior: smooth;
 
   scrollbar-width: none;
 
-  padding: 30px 20px;
+  padding: 40px 25px 120px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -162,12 +164,8 @@ main {
 /* CARD */
 
 .card {
-  min-width: 180px;
-  max-width: 180px;
-
-  border-radius: 8px;
-
-  overflow: visible;
+  min-width: 220px;
+  max-width: 220px;
 
   position: relative;
 
@@ -176,12 +174,14 @@ main {
   transition:
     transform 0.25s ease,
     z-index 0.25s ease;
+
+  z-index: 1;
 }
 
 .card:hover {
-  transform: scale(1.25);
+  transform: scale(1.18);
 
-  z-index: 50;
+  z-index: 100;
 }
 
 .card img {
@@ -207,7 +207,7 @@ main {
 
   background: #181818;
 
-  padding: 15px;
+  padding: 18px;
 
   border-radius: 0 0 8px 8px;
 
@@ -218,7 +218,9 @@ main {
   transition: 0.25s ease;
 
   box-shadow:
-    0 10px 30px rgba(0,0,0,0.6);
+    0 10px 30px rgba(0,0,0,0.7);
+
+  overflow: visible;
 }
 
 .card:hover .overlay {
@@ -227,43 +229,38 @@ main {
   transform: translateY(0);
 }
 
-/* CONTROLS */
+/* PLAY BUTTON */
 
 .controls {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   margin-bottom: 15px;
 }
 
-.left-controls {
-  display: flex;
-  gap: 10px;
-}
-
-.control-btn {
-  width: 34px;
-  height: 34px;
+.play-btn {
+  width: 42px;
+  height: 42px;
 
   border-radius: 50%;
 
-  border: 2px solid rgba(255,255,255,0.5);
+  background: white;
+  color: black;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
 
   cursor: pointer;
 
   transition: 0.2s ease;
 }
 
-.control-btn:hover {
-  border-color: white;
-  background: rgba(255,255,255,0.1);
+.play-btn:hover {
+  transform: scale(1.08);
 }
 
 /* META */
@@ -275,13 +272,13 @@ main {
 
   margin-bottom: 12px;
 
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 .age {
   border: 1px solid rgba(255,255,255,0.4);
 
-  padding: 2px 6px;
+  padding: 2px 7px;
 
   border-radius: 4px;
 
@@ -304,7 +301,7 @@ main {
 
 .genre {
   color: #d0d0d0;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 .genre::after {
@@ -324,7 +321,7 @@ main {
   align-items: center;
   gap: 6px;
 
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 
   color: white;
 }
@@ -352,7 +349,7 @@ main {
 
   cursor: pointer;
 
-  z-index: 100;
+  z-index: 200;
 
   font-size: 2rem;
 
@@ -379,4 +376,32 @@ footer {
   padding: 50px;
 
   color: #777;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: 45vh;
+    padding: 40px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  .card {
+    min-width: 160px;
+    max-width: 160px;
+  }
+
 }
