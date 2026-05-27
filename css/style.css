@@ -29,17 +29,21 @@ nav {
 
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.95),
     rgba(0,0,0,0)
   );
+
+  backdrop-filter: blur(8px);
 }
 
 nav a {
   color: white;
   text-decoration: none;
+
   font-size: 0.95rem;
   font-weight: 500;
-  transition: 0.3s;
+
+  transition: 0.25s;
 }
 
 nav a:hover {
@@ -90,13 +94,16 @@ nav a:hover {
 .hero h1 {
   font-size: 6rem;
   font-weight: 900;
+
   letter-spacing: -5px;
+
   margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 1.2rem;
   line-height: 1.8;
+
   color: #d0d0d0;
 }
 
@@ -120,6 +127,8 @@ main {
 .year-section h2 {
   font-size: 2rem;
   margin-bottom: -5px;
+
+  font-weight: 800;
 }
 
 /* CAROUSEL */
@@ -142,7 +151,7 @@ main {
   padding:
     35px
     30px
-    180px;
+    190px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -160,15 +169,48 @@ main {
   flex-shrink: 0;
 
   transition:
-    transform 0.25s ease,
-    z-index 0.25s ease;
+    transform 0.28s ease,
+    z-index 0.28s ease;
 
   z-index: 1;
 }
 
 .card:hover {
   transform: scale(1.08);
+
   z-index: 500;
+}
+
+/* IMAGE */
+
+.card-image {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 10px 10px 0 0;
+}
+
+.card-image::after {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0)
+    );
+
+  opacity: 0;
+
+  transition: 0.25s ease;
+}
+
+.card:hover .card-image::after {
+  opacity: 1;
 }
 
 .card img {
@@ -180,9 +222,13 @@ main {
 
   object-position: top;
 
-  border-radius: 8px;
-
   display: block;
+
+  transition: transform 0.35s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
 }
 
 /* OVERLAY */
@@ -194,11 +240,16 @@ main {
   right: 0;
   top: 100%;
 
-  background: #181818;
+  background:
+    linear-gradient(
+      to bottom,
+      #1f1f1f,
+      #141414
+    );
 
   padding: 18px;
 
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 10px 10px;
 
   opacity: 0;
 
@@ -207,9 +258,12 @@ main {
   transition: 0.22s ease;
 
   box-shadow:
-    0 10px 30px rgba(0,0,0,0.7);
+    0 20px 40px rgba(0,0,0,0.8);
 
   min-height: 120px;
+
+  border-top:
+    1px solid rgba(255,255,255,0.05);
 }
 
 .card:hover .overlay {
@@ -230,8 +284,8 @@ main {
 /* PLAY */
 
 .play-btn {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
 
   border-radius: 50%;
 
@@ -249,11 +303,13 @@ main {
 
   flex-shrink: 0;
 
-  transition: 0.2s ease;
+  transition: 0.22s ease;
 }
 
 .play-btn:hover {
   transform: scale(1.08);
+
+  background: #e5e5e5;
 }
 
 /* META */
@@ -288,7 +344,7 @@ main {
   flex-wrap: wrap;
   gap: 6px;
 
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .genre {
@@ -313,6 +369,8 @@ main {
   gap: 6px;
 
   font-size: 0.84rem;
+
+  color: #f1f1f1;
 }
 
 .badge-icon {
@@ -342,25 +400,19 @@ main {
 
   font-size: 2rem;
 
-  transition: 0.3s;
+  transition: 0.25s;
 }
 
 .arrow:hover {
   background: rgba(20,20,20,0.95);
 }
 
-.arrow-left {
-  left: 0;
-}
-
-.arrow-right {
-  right: 0;
-}
-
 /* FOOTER */
 
 footer {
   text-align: center;
+
   padding: 50px;
+
   color: #777;
 }
