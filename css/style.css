@@ -99,6 +99,30 @@ nav{
     color:#ffffff;
 }
 
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#e50914;
+
+    transition:0.25s ease;
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+}
+
 /* HERO */
 
 .hero{
@@ -213,7 +237,11 @@ main{
 
 .year-section{
 
-    margin-bottom:26px;
+    position:relative;
+
+    margin-bottom:-110px;
+
+    overflow:visible;
 }
 
 .year-section h2{
@@ -236,6 +264,8 @@ main{
 .carousel-wrapper{
 
     position:relative;
+
+    overflow:visible;
 }
 
 .carousel{
@@ -250,7 +280,10 @@ main{
 
     scroll-behavior:smooth;
 
-    padding:28px 54px 190px;
+    padding:
+    28px
+    54px
+    280px;
 
     scrollbar-width:none;
 }
@@ -333,7 +366,9 @@ main{
 
     overflow:visible;
 
-    transition:0.3s ease;
+    transition:
+    transform 0.28s ease,
+    z-index 0.28s ease;
 
     z-index:1;
 }
@@ -341,10 +376,10 @@ main{
 .card:hover{
 
     transform:
-    scale(1.12)
-    translateY(-10px);
+    scale(1.42)
+    translateY(-38px);
 
-    z-index:999;
+    z-index:9999;
 }
 
 .card-image{
@@ -367,6 +402,8 @@ main{
     object-fit:cover;
 
     display:block;
+
+    transition:0.3s ease;
 }
 
 /* OVERLAY */
@@ -375,26 +412,28 @@ main{
 
     position:absolute;
 
-    left:0;
-
     top:0;
+
+    left:0;
 
     width:100%;
 
     background:#181818;
 
-    border-radius:10px;
+    border-radius:12px;
 
     overflow:hidden;
 
     opacity:0;
 
-    transform:translateY(10px);
+    transform:translateY(15px);
 
-    transition:0.25s ease;
+    transition:0.28s ease;
 
     box-shadow:
-    0 20px 40px rgba(0,0,0,0.5);
+    0 18px 45px rgba(0,0,0,0.7);
+
+    pointer-events:none;
 }
 
 .card:hover .overlay{
@@ -402,6 +441,13 @@ main{
     opacity:1;
 
     transform:translateY(0);
+
+    pointer-events:auto;
+}
+
+.card:hover .card-image img{
+
+    filter:brightness(0.82);
 }
 
 /* VIDEO */
