@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #0b0b0b;
+  background: #141414;
   color: white;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
@@ -37,6 +37,7 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
+
   font-size: 0.95rem;
   font-weight: 500;
 
@@ -50,7 +51,7 @@ nav a:hover {
 /* HERO */
 
 .hero {
-  height: 55vh;
+  height: 60vh;
 
   display: flex;
   align-items: flex-end;
@@ -72,13 +73,13 @@ nav a:hover {
   background:
     linear-gradient(
       to top,
-      rgba(11,11,11,1),
-      rgba(11,11,11,0.2)
+      rgba(20,20,20,1),
+      rgba(20,20,20,0.1)
     ),
     linear-gradient(
       to right,
-      rgba(11,11,11,0.95),
-      rgba(11,11,11,0.3)
+      rgba(20,20,20,0.95),
+      rgba(20,20,20,0.3)
     );
 }
 
@@ -86,26 +87,27 @@ nav a:hover {
   position: relative;
   z-index: 2;
 
-  max-width: 700px;
+  max-width: 650px;
 }
 
 .hero h1 {
-  font-size: 5rem;
-  font-weight: 800;
+  font-size: 6rem;
+  font-weight: 900;
 
-  letter-spacing: -4px;
+  letter-spacing: -5px;
 
   margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #d0d0d0;
 
-  line-height: 1.7;
+  line-height: 1.8;
+
+  color: #d0d0d0;
 }
 
-/* HERO ESPECÍFICOS */
+/* HERO IMAGES */
 
 .home-hero {
   background-image:
@@ -125,18 +127,18 @@ nav a:hover {
 /* MAIN */
 
 main {
-  padding: 40px;
+  padding: 30px 50px 80px;
 }
 
 /* YEAR SECTION */
 
 .year-section {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .year-section h2 {
-  font-size: 2rem;
-  margin-bottom: 25px;
+  font-size: 1.8rem;
+  margin-bottom: 18px;
 }
 
 /* CAROUSEL */
@@ -147,7 +149,7 @@ main {
 
 .carousel {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 
   overflow-x: auto;
 
@@ -164,23 +166,28 @@ main {
 
 .card {
   min-width: 180px;
+  max-width: 180px;
 
-  position: relative;
-
-  border-radius: 12px;
+  border-radius: 6px;
 
   overflow: hidden;
 
+  position: relative;
+
   flex-shrink: 0;
 
-  transition: transform 0.3s ease;
+  transition:
+    transform 0.25s ease,
+    z-index 0.25s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
 
-  z-index: 10;
+  z-index: 20;
 }
+
+/* POSTER */
 
 .card img {
   width: 100%;
@@ -198,21 +205,21 @@ main {
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.95),
-    rgba(0,0,0,0.1)
-  );
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 
-  padding: 18px;
+  padding: 15px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.95),
+    rgba(0,0,0,0)
+  );
 
   opacity: 0;
 
-  transition: 0.3s ease;
+  transition: 0.25s ease;
 }
 
 .card:hover .overlay {
@@ -220,15 +227,17 @@ main {
 }
 
 .overlay h3 {
-  font-size: 1.1rem;
-  margin-bottom: 8px;
+  font-size: 1rem;
+
+  margin-bottom: 6px;
 }
 
 .overlay p {
-  color: #d0d0d0;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 
-  margin-bottom: 4px;
+  color: #d0d0d0;
+
+  margin-bottom: 2px;
 }
 
 /* ARROWS */
@@ -239,13 +248,12 @@ main {
 
   transform: translateY(-50%);
 
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 90px;
 
   border: none;
-  border-radius: 50%;
 
-  background: rgba(0,0,0,0.8);
+  background: rgba(20,20,20,0.7);
 
   color: white;
 
@@ -253,15 +261,21 @@ main {
 
   z-index: 50;
 
-  font-size: 1.5rem;
+  font-size: 2rem;
+
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  background: rgba(20,20,20,0.95);
 }
 
 .arrow-left {
-  left: -20px;
+  left: 0;
 }
 
 .arrow-right {
-  right: -20px;
+  right: 0;
 }
 
 /* CONTENT */
@@ -283,7 +297,7 @@ main {
 .content p {
   color: #c0c0c0;
 
-  line-height: 1.8;
+  line-height: 1.9;
 
   margin-bottom: 25px;
 }
@@ -293,7 +307,7 @@ main {
 footer {
   text-align: center;
 
-  padding: 60px;
+  padding: 50px;
 
   color: #777;
 }
@@ -321,7 +335,8 @@ footer {
   }
 
   .card {
-    min-width: 140px;
+    min-width: 130px;
+    max-width: 130px;
   }
 
 }
