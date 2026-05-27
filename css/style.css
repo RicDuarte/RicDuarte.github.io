@@ -37,10 +37,8 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-
   font-size: 0.95rem;
   font-weight: 500;
-
   transition: 0.3s;
 }
 
@@ -86,24 +84,19 @@ nav a:hover {
 .hero-content {
   position: relative;
   z-index: 2;
-
   max-width: 650px;
 }
 
 .hero h1 {
   font-size: 6rem;
   font-weight: 900;
-
   letter-spacing: -5px;
-
   margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 1.2rem;
-
   line-height: 1.8;
-
   color: #d0d0d0;
 }
 
@@ -128,7 +121,7 @@ main {
 /* YEAR SECTION */
 
 .year-section {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .year-section h2 {
@@ -147,14 +140,18 @@ main {
   gap: 14px;
 
   overflow-x: auto;
-
   overflow-y: visible;
 
   scroll-behavior: smooth;
 
   scrollbar-width: none;
 
-  padding: 40px 25px 120px;
+  padding:
+    40px
+    25px
+    220px;
+
+  position: relative;
 }
 
 .carousel::-webkit-scrollbar {
@@ -176,12 +173,13 @@ main {
     z-index 0.25s ease;
 
   z-index: 1;
+
+  overflow: visible;
 }
 
 .card:hover {
   transform: scale(1.18);
-
-  z-index: 100;
+  z-index: 500;
 }
 
 .card img {
@@ -221,11 +219,12 @@ main {
     0 10px 30px rgba(0,0,0,0.7);
 
   overflow: visible;
+
+  min-height: 170px;
 }
 
 .card:hover .overlay {
   opacity: 1;
-
   transform: translateY(0);
 }
 
@@ -306,7 +305,6 @@ main {
 
 .genre::after {
   content: '•';
-
   margin-left: 6px;
 }
 
@@ -334,7 +332,7 @@ main {
 
 .arrow {
   position: absolute;
-  top: 50%;
+  top: 38%;
 
   transform: translateY(-50%);
 
@@ -349,7 +347,7 @@ main {
 
   cursor: pointer;
 
-  z-index: 200;
+  z-index: 999;
 
   font-size: 2rem;
 
@@ -372,9 +370,7 @@ main {
 
 footer {
   text-align: center;
-
   padding: 50px;
-
   color: #777;
 }
 
