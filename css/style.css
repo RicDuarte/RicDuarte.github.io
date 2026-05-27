@@ -115,29 +115,35 @@ nav a:hover {
 /* MAIN */
 
 main {
-  padding: 30px 50px 120px;
+  padding: 30px 50px 180px;
+
+  overflow: visible;
 }
 
 /* YEAR SECTION */
 
 .year-section {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+
+  overflow: visible;
 }
 
 .year-section h2 {
   font-size: 1.8rem;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 /* CAROUSEL */
 
 .carousel-wrapper {
   position: relative;
+
+  overflow: visible;
 }
 
 .carousel {
   display: flex;
-  gap: 14px;
+  gap: 16px;
 
   overflow-x: auto;
   overflow-y: visible;
@@ -148,10 +154,12 @@ main {
 
   padding:
     40px
-    25px
-    220px;
+    30px
+    260px;
 
   position: relative;
+
+  overflow: visible;
 }
 
 .carousel::-webkit-scrollbar {
@@ -161,8 +169,8 @@ main {
 /* CARD */
 
 .card {
-  min-width: 220px;
-  max-width: 220px;
+  min-width: 250px;
+  max-width: 250px;
 
   position: relative;
 
@@ -178,7 +186,8 @@ main {
 }
 
 .card:hover {
-  transform: scale(1.18);
+  transform: scale(1.15);
+
   z-index: 500;
 }
 
@@ -220,7 +229,7 @@ main {
 
   overflow: visible;
 
-  min-height: 170px;
+  min-height: 180px;
 }
 
 .card:hover .overlay {
@@ -238,8 +247,8 @@ main {
 }
 
 .play-btn {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
 
   border-radius: 50%;
 
@@ -271,13 +280,13 @@ main {
 
   margin-bottom: 12px;
 
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .age {
   border: 1px solid rgba(255,255,255,0.4);
 
-  padding: 2px 7px;
+  padding: 3px 8px;
 
   border-radius: 4px;
 
@@ -300,7 +309,7 @@ main {
 
 .genre {
   color: #d0d0d0;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .genre::after {
@@ -319,7 +328,7 @@ main {
   align-items: center;
   gap: 6px;
 
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 
   color: white;
 }
@@ -332,12 +341,12 @@ main {
 
 .arrow {
   position: absolute;
-  top: 38%;
+  top: 36%;
 
   transform: translateY(-50%);
 
-  width: 45px;
-  height: 90px;
+  width: 50px;
+  height: 100px;
 
   border: none;
 
@@ -396,8 +405,8 @@ footer {
   }
 
   .card {
-    min-width: 160px;
-    max-width: 160px;
+    min-width: 180px;
+    max-width: 180px;
   }
 
 }
