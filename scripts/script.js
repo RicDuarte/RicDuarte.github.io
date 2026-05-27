@@ -9,7 +9,7 @@ function scrollCarousel(id, amount) {
 
 }
 
-/* PLAY BUTTON */
+/* PLAY TRAILER INSIDE CARD */
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -19,10 +19,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     button.addEventListener('click', () => {
 
-      window.open(
-        'https://www.youtube.com/watch?v=69XoA7a0Gqs',
-        '_blank'
-      );
+      const card = button.closest('.card');
+
+      const imageContainer = card.querySelector('.card-image');
+
+      /* Prevent duplicate iframe */
+
+      if (imageContainer.querySelector('iframe')) {
+        return;
+      }
+
+      imageContainer.innerHTML = `
+        <iframe
+          width="100%"
+          height="185"
+          src="https://www.youtube.com/embed/ddT_eY7Mlg4?autoplay=1&mute=0&rel=0"
+          title="Trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          allowfullscreen>
+        </iframe>
+      `;
 
     });
 
