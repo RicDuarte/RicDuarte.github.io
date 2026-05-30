@@ -10,8 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  /* CONTAINER */
+/* CONTAINER */
 
 .container{
 
@@ -19,7 +18,8 @@ body {
 
   margin:auto;
 }
-  
+
+body {  
   background:
     radial-gradient(circle at top, #1d1d1d 0%, #0f0f0f 45%, #080808 100%);
 
