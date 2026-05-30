@@ -18,6 +18,10 @@ html{
   scroll-behavior:smooth;
 }
 
+main {
+    padding-bottom: 120px;
+}
+
 body{
   background:var(--bg);
   color:var(--text);
