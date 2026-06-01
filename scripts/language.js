@@ -26,6 +26,11 @@ function loadLanguage(lang) {
     );
 
     setText(
+        "about-text-2",
+        content[lang].aboutText3
+    );
+
+    setText(
         "experience-title",
         content[lang].experienceTitle
     );
