@@ -16,10 +16,10 @@ const content = {
             "Tenho experiência em tradução, MTPE, revisão e controlo de qualidade linguístico, sempre com especial atenção à naturalidade do português europeu e às exigências técnicas da legendagem.",
 
         aboutExpYears:
-            "Anos de Experiência",
+            "+10",
 
         aboutExpYearsDescription:
-            "+10",
+            "Anos de Experiência",
 
         aboutExpProjects:
             "+3000",
@@ -57,10 +57,10 @@ const content = {
             "I have experience in translation, MTPE, proofreading, and linguistic quality control, always paying special attention to the natural flow of European Portuguese and the technical requirements of subtitling.",
 
         aboutExpYears:
-            "Years of Experience",
+            "+10",
 
         aboutExpYearsDescription:
-            "+10",
+            "Years of Experience",
 
         aboutExpProjects:
             "+3000",
