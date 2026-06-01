@@ -8,6 +8,45 @@ function setText(id, value) {
 
 }
 
+// Função que renderiza dinamicamente a parte da Experiência
+function renderExperience(lang) {
+
+    const container =
+        document.getElementById(
+            "experience-container"
+        );
+
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    content[lang].experience
+        .forEach(item => {
+
+            container.innerHTML += `
+
+                <div class="timeline-item">
+
+                    <div class="timeline-year">
+                        ${item.year}
+                    </div>
+
+                    <div class="timeline-title">
+                        ${item.title}
+                    </div>
+
+                    <div class="timeline-description">
+                        ${item.description}
+                    </div>
+
+                </div>
+
+            `;
+
+        });
+
+}
+
 function loadLanguage(lang) {
 
     setText(
@@ -69,12 +108,13 @@ function loadLanguage(lang) {
         "skills-title",
         content[lang].skillsTitle
     );
-
+    
+    renderExperience(lang);
+    
     localStorage.setItem(
         "language",
         lang
     );
-
 }
 
 document.addEventListener(
