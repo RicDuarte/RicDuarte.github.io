@@ -26,7 +26,7 @@ function loadLanguage(lang) {
     );
 
     setText(
-        "about-text-2",
+        "about-text-3",
         content[lang].aboutText3
     );
 
