@@ -38,6 +38,48 @@ const content = {
         experienceTitle:
             "Experiência",
 
+        experience: [
+
+            {
+
+                year:
+                    "2026 — Presente",
+
+                title:
+                    "Tradutor Audiovisual Freelancer",
+
+                description:
+                    "Tradução, adaptação e revisão de conteúdos audiovisuais para português europeu."
+
+            },
+
+            {
+
+                year:
+                    "2024 — 2026",
+
+                title:
+                    "Projetos de Streaming e Entretenimento",
+
+                description:
+                    "Participação em projetos scripted e unscripted para plataformas internacionais de streaming."
+
+            },
+
+             {
+
+                year:
+                    "Especialização",
+
+                title:
+                    "QC • MTPE • Localization",
+
+                description:
+                    "Experiência em controlo de qualidade, pós-edição de tradução automática e workflows de localização audiovisual."
+
+            }
+        ],
+
         // ********** Zona Skills *************
 
         skillsTitle:
@@ -81,11 +123,53 @@ const content = {
         experienceTitle:
             "Experience",
 
+        experience: [
+
+            {
+
+                year:
+                    "2026 — Present",
+
+                title:
+                    "Freelance Audiovisual Translator",
+
+                description:
+                    "Translation, adaptation and review of audiovisual content for European Portuguese."
+
+            },
+
+            {
+
+                year:
+                    "2024 — 2026",
+
+                title:
+                    "Streaming & Entertainment Projects",
+
+                description:
+                    "Participation in scripted and unscripted projects for international streaming platforms."
+
+            },
+
+            {
+
+                year:
+                    "Specialization",
+
+                title:
+                    "QC • MTPE • Localization",
+
+                description:
+                    "Experience in quality control, machine translation post-editing and audiovisual localization workflows."
+
+            }
+
+        ]
+
         // ********** Zona Skills *************
 
         skillsTitle:
             "Skills"
-
 
     }
 
