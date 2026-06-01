@@ -164,7 +164,7 @@ const content = {
 
             }
 
-        ]
+        ],
 
         // ********** Zona Skills *************
 
