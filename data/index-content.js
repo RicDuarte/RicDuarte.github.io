@@ -31,6 +31,9 @@ const content = {
         aboutText2:
             "I have experience in localization, MTPE and quality control.",
 
+        aboutText3:
+            "I have experience in translation, MTPE, proofreading, and linguistic quality control, always paying special attention to the natural flow of European Portuguese and the technical requirements of subtitling.",
+
         experienceTitle:
             "Experience",
 
