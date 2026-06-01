@@ -31,8 +31,8 @@ function loadLanguage(lang) {
     );
 
     setText(
-        "aboutExpYear",
-        content[lang].aboutExpYear
+        "aboutExpYears",
+        content[lang].aboutExpYears
     );
 
     setText(
