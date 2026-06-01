@@ -10,6 +10,9 @@ const content = {
         aboutText2:
             "Tenho experiência em localização, MTPE e revisão.",
 
+        aboutText3:
+            "Tenho experiência em tradução, MTPE, revisão e controlo de qualidade linguístico, sempre com especial atenção à naturalidade do português europeu e às exigências técnicas da legendagem.",
+
         experienceTitle:
             "Experiência",
 
