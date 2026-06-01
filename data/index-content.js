@@ -72,7 +72,7 @@ const content = {
                     "Especialização",
 
                 title:
-                    "QC • MTPE • Localization",
+                    "QC • MTPE • Localização",
 
                 description:
                     "Experiência em controlo de qualidade, pós-edição de tradução automática e workflows de localização audiovisual."
