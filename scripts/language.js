@@ -31,6 +31,36 @@ function loadLanguage(lang) {
     );
 
     setText(
+        "aboutExpYear",
+        content[lang].aboutExpYear
+    );
+
+    setText(
+        "aboutExpYearsDescription",
+        content[lang].aboutExpYearsDescription
+    );
+
+    setText(
+        "aboutExpProjects",
+        content[lang].aboutExpProjects
+    );
+
+    setText(
+        "aboutExpProjectsDescription",
+        content[lang].aboutExpProjectsDescription
+    );
+
+    setText(
+        "aboutExpChannels",
+        content[lang].aboutExpChannels
+    );
+
+    setText(
+        "aboutExpChannelsDescription",
+        content[lang].aboutExpChannelsDescription
+    );
+
+    setText(
         "experience-title",
         content[lang].experienceTitle
     );
