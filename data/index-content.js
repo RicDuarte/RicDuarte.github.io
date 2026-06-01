@@ -33,10 +33,12 @@ const content = {
         aboutExpChannelsDescription:
             "Plataformas de Streaming",
 
-        // ********** Zona Sobre Mim *************
+        // ********** Zona Experiência *************
 
         experienceTitle:
             "Experiência",
+
+        // ********** Zona Skills *************
 
         skillsTitle:
             "Competências"
@@ -79,8 +81,11 @@ const content = {
         experienceTitle:
             "Experience",
 
+        // ********** Zona Skills *************
+
         skillsTitle:
             "Skills"
+
 
     }
 
