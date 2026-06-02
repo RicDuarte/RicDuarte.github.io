@@ -201,6 +201,18 @@ function loadLanguage(lang) {
     renderHero(lang);
     renderExperience(lang);
     renderSkills(lang);
+
+    document
+        .querySelectorAll(".lang-option")
+        .forEach(el =>
+            el.classList.remove("active")
+    );
+
+    document
+        .querySelector(
+            `[data-lang="${lang}"]`
+        )
+    ?.classList.add("active");
     
     localStorage.setItem(
         "language",
