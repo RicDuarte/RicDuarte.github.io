@@ -83,7 +83,7 @@ const content = {
         // ********** Zona Skills *************
 
         skillsTitle:
-            "Competências"
+            "Competências",
             
         skills: [
         
@@ -180,7 +180,7 @@ const content = {
         // ********** Zona Skills *************
 
         skillsTitle:
-            "Skills"
+            "Skills",
         
         skills: [
         
