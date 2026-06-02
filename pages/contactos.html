@@ -123,48 +123,31 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       
       </div>
 
-        <form class="contact-form">
+        <form class="contact-form" action="https://formsubmit.co/ricardo@teudominio.com" method="POST">
 
             <div>
-
-                <label>Nome</label>
-
-                <input type="text">
-
+              <label>Nome</label>
+              <input type="text" name="Nome" required>
             </div>
 
             <div>
-
-                <label>Email</label>
-
-                <input type="email">
-
+              <label>Email</label>
+              <input type="email" name="Email" required>
             </div>
 
             <div>
-
-                <label>Assunto</label>
-
-                <input type="text">
-
+              <label>Assunto</label>
+              <input type="text" name="Assunto">
             </div>
 
             <div>
-
-                <label>Mensagem</label>
-
-                <textarea></textarea>
-
+              <label>Mensagem</label>
+              <textarea name="Mensagem" required></textarea>
             </div>
 
-            <button
-                type="submit"
-                class="contact-submit">
-
-                Enviar Mensagem
-
-            </button>
-
+          <button type="submit">Enviar Mensagem</button>
+          
+          <input type="hidden" name="_captcha" value="false">
         </form>
 
     </div>
