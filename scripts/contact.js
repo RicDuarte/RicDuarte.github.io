@@ -42,13 +42,16 @@ function sendMessage(event) {
     })
 
     .catch((error) => {
-
-        console.error(error);
-
-        showPopup(
-            "Erro ao enviar a mensagem."
+    
+        console.error(
+            "EMAILJS ERROR:",
+            error
         );
-
+    
+        alert(
+            JSON.stringify(error)
+        );
+    
     });
 
 }
