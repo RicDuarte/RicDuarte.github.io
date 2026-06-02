@@ -49,13 +49,13 @@
 
 }
 
-.lang-option:hover {
+.lang-option:not(.active):hover {
 
     color: white;
 
 }
 
-.lang-option:hover::after {
+.lang-option:not(.active):hover::after {
 
     width: 100%;
 
@@ -65,11 +65,15 @@
 
     color: white;
 
+    cursor: default;
+
+    pointer-events: none;
+
 }
 
 .lang-option.active::after {
 
-    width: 100%;
+    width: 0;
 
 }
 
