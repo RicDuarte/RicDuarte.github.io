@@ -84,6 +84,17 @@ const content = {
 
         skillsTitle:
             "Competências"
+            
+        skills: [
+        
+            "OOONA",
+            "Subtitle Edit",
+            "QC",
+            "MTPE",
+            "Netflix Guidelines",
+            "PT-PT Adaptation",
+            "Localization"
+        ]
 
     },
 
@@ -170,6 +181,17 @@ const content = {
 
         skillsTitle:
             "Skills"
+        
+        skills: [
+        
+            "OOONA",
+            "Subtitle Edit",
+            "QC",
+            "MTPE",
+            "Netflix Guidelines",
+            "PT-PT Adaptation",
+            "Localization"
+        ]
 
     }
 
