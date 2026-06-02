@@ -76,6 +76,44 @@ function renderSkills(lang) {
 
 }
 
+function renderHero(lang) {
+
+    setText(
+        "hero-subtitle",
+        content[lang].heroSubtitle
+    );
+
+    setText(
+        "hero-first-name",
+        content[lang].heroFirstName
+    );
+
+    setText(
+        "hero-last-name",
+        content[lang].heroLastName
+    );
+
+    setText(
+        "hero-description",
+        content[lang].heroDescription
+    );
+
+    const image =
+        document.getElementById(
+            "hero-image"
+        );
+
+    if (image) {
+
+        image.src =
+            content[lang].heroImage;
+
+        image.alt =
+            content[lang].heroImageAlt;
+    }
+
+}
+
 function loadLanguage(lang) {
 
     setText(
@@ -137,7 +175,8 @@ function loadLanguage(lang) {
         "skills-title",
         content[lang].skillsTitle
     );
-    
+
+    renderHero(lang);
     renderExperience(lang);
     renderSkills(lang);
     
