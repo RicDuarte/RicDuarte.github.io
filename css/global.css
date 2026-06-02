@@ -1,3 +1,52 @@
+/* HEADER */
+.language-switch {
+
+    position: absolute;
+
+    right: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+.lang-option {
+
+    color: #8d8d8d;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+
+}
+
+.lang-option:hover {
+
+    color: #e50914;
+
+}
+
+.lang-option.active {
+
+    color: #ffffff;
+
+}
+
+.lang-separator {
+
+    color: #5a5a5a;
+
+    user-select: none;
+
+}
+
 /* FOOTER */
 
 footer{
