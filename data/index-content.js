@@ -2,6 +2,16 @@ const content = {
     
 // Bloco de traduções PT
     pt: {
+        // ********** Zona da Navbar Superior Geral *************
+        navAbout:
+            "Sobre Mim",
+
+        navPortfolio:
+            "Portefólio",
+
+        navContact:
+            "Contactos",
+        
         // ********** Zona de Landing - Hero *************
         heroSubtitle:
             "Localização Audiovisual",
@@ -117,6 +127,16 @@ const content = {
     },
 
     en: {
+        // ********** Zona da Navbar Superior Geral *************
+        navAbout:
+            "About",
+
+        navPortfolio:
+            "Portfolio",
+
+        navContact:
+            "Contact",
+        
         // ********** Zona de Landing - Hero *************
         heroSubtitle:
             "Audiovisual Localization",
