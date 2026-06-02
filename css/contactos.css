@@ -71,35 +71,29 @@
 
     flex-direction: column;
 
-    gap: 60px;
+    gap: 45px;
 
-}
-
-.contact-info {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 35px;
+    align-items: flex-start;
 
 }
 
 .contact-icon {
 
-    display: flex;
-
-    align-items: center;
-
-    gap: 16px;
-
     color: #d5d5d5;
 
     text-decoration: none;
 
-    font-size: 1.1rem;
-
     transition: 0.25s ease;
+
+}
+
+.contact-icon svg {
+
+    width: 28px;
+
+    height: 28px;
+
+    display: block;
 
 }
 
@@ -107,7 +101,7 @@
 
     font-size: 1rem;
 
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 
 }
 
@@ -116,6 +110,22 @@
     color: #e50914;
 
     transform: translateX(5px);
+
+}
+
+.imdb-icon {
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    border: 2px solid currentColor;
+
+    padding: 4px 8px;
+
+    border-radius: 4px;
 
 }
 
