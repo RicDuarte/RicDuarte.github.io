@@ -211,6 +211,41 @@
 
 }
 
+.contact-popup {
+
+    position: fixed;
+
+    bottom: 40px;
+
+    right: 40px;
+
+    background: #111;
+
+    color: white;
+
+    padding: 18px 28px;
+
+    border:
+        1px solid rgba(255,255,255,0.1);
+
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    transition: 0.3s ease;
+
+    z-index: 99999;
+
+}
+
+.contact-popup.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
 /* MOBILE */
 
 @media (max-width: 900px) {
