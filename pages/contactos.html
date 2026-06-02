@@ -11,37 +11,84 @@
 </head>
 
 <body>
-
-<header>
-  <h1>Contactos</h1>
-  <p>Entrar em contacto</p>
-</header>
+  <body>
 
 <nav>
-  <a href="../index.html">Sobre Mim</a>
-  <a href="portfolio.html">Portefólio</a>
-  <a href="contactos.html">Contactos</a>
+  <nav>
+    <a href="index.html"
+       class="logo">
+      RICARDO DUARTE
+    </a>
+
+    <div class="nav-links">
+
+    <a
+        id="nav-about" href="index.html">
+    </a>
+    
+    <a
+        id="nav-portfolio" href="pages/portfolio.html">
+    </a>
+    
+    <a
+        id="nav-contact" href="pages/contactos.html">
+    </a>
+
+    </div>
+    
+    <div class="language-switch">
+    
+        <span
+        class="lang-option"
+        data-lang="pt"
+        onclick="loadLanguage('pt')">
+        PT
+    </span>
+    
+    <span class="lang-separator">/</span>
+    
+    <span
+        class="lang-option"
+        data-lang="en"
+        onclick="loadLanguage('en')">
+        EN
+    </span>
+    
+    </div>
+
+  </nav>
 </nav>
 
-<div class="container">
+<main>
 
-  <h2>Email</h2>
-
-  <p>
-    teuemail@exemplo.com
-  </p>
-
-  <h2>LinkedIn</h2>
-
-  <p>
-    linkedin.com/in/teuperfil
-  </p>
-
-</div>
+</main>
 
 <footer>
-  © 2026 Ricardo Duarte
+
+  <div class="container footer-content">
+
+    <p>
+      © 2026 Ricardo Duarte
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#">IMDb</a>
+
+      <a href="#">LinkedIn</a>
+
+      <a href="contactos.html">Email</a>
+
+    </div>
+
+  </div>
+
 </footer>
 
+<script src="../data/index-content.js"></script>
+<script src="../scripts/language.js"></script>
+<script src="../scripts/script.js"></script>
+
+</body>
 </body>
 </html>
