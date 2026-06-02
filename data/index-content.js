@@ -91,9 +91,9 @@ const content = {
             "Subtitle Edit",
             "QC",
             "MTPE",
-            "Netflix Guidelines",
-            "PT-PT Adaptation",
-            "Localization"
+            "Especificações da Netflix",
+            "Adaptação para PT-PT",
+            "Localização"
         ]
 
     },
