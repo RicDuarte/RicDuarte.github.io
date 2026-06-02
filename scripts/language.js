@@ -8,6 +8,65 @@ function setText(id, value) {
 
 }
 
+// Função que renderiza dinamicamente a navbar geral superior
+function renderNavigation(lang) {
+
+    setText(
+        "nav-about",
+        content[lang].navAbout
+    );
+
+    setText(
+        "nav-portfolio",
+        content[lang].navPortfolio
+    );
+
+    setText(
+        "nav-contact",
+        content[lang].navContact
+    );
+
+}
+
+// Função que renderiza dinamicamente a parte essencial do landing com a minha foto, a zona Hero.
+function renderHero(lang) {
+
+    setText(
+        "hero-subtitle",
+        content[lang].heroSubtitle
+    );
+
+    setText(
+        "hero-first-name",
+        content[lang].heroFirstName
+    );
+
+    setText(
+        "hero-last-name",
+        content[lang].heroLastName
+    );
+
+    setText(
+        "hero-description",
+        content[lang].heroDescription
+    );
+
+    const image =
+        document.getElementById(
+            "hero-image"
+        );
+
+    if (image) {
+
+        image.src =
+            content[lang].heroImage;
+
+        image.alt =
+            content[lang].heroImageAlt;
+    }
+
+}
+
 // Função que renderiza dinamicamente a parte da Experiência
 function renderExperience(lang) {
 
@@ -76,44 +135,6 @@ function renderSkills(lang) {
 
 }
 
-function renderHero(lang) {
-
-    setText(
-        "hero-subtitle",
-        content[lang].heroSubtitle
-    );
-
-    setText(
-        "hero-first-name",
-        content[lang].heroFirstName
-    );
-
-    setText(
-        "hero-last-name",
-        content[lang].heroLastName
-    );
-
-    setText(
-        "hero-description",
-        content[lang].heroDescription
-    );
-
-    const image =
-        document.getElementById(
-            "hero-image"
-        );
-
-    if (image) {
-
-        image.src =
-            content[lang].heroImage;
-
-        image.alt =
-            content[lang].heroImageAlt;
-    }
-
-}
-
 function loadLanguage(lang) {
 
     setText(
@@ -175,7 +196,8 @@ function loadLanguage(lang) {
         "skills-title",
         content[lang].skillsTitle
     );
-
+    
+    renderNavigation(lang);
     renderHero(lang);
     renderExperience(lang);
     renderSkills(lang);
