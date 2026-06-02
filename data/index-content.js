@@ -4,7 +4,7 @@ const content = {
     pt: {
         // ********** Zona de Landing - Hero *************
         heroSubtitle:
-            "Audiovisual Localization",
+            "Localização Audiovisual",
 
         heroFirstName:
             "Ricardo",
