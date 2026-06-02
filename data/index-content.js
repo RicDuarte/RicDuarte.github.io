@@ -2,6 +2,24 @@ const content = {
     
 // Bloco de traduções PT
     pt: {
+        // ********** Zona de Landing - Hero *************
+        heroSubtitle:
+            "Audiovisual Localization",
+
+        heroFirstName:
+            "Ricardo",
+
+        heroLastName:
+            "Duarte",
+
+        heroDescription:
+            "Especializado em tradução audiovisual, localização e adaptação para português europeu. Trabalho há mais de 10 anos com conteúdos scripted e unscripted, incluindo séries, reality shows, documentários e conteúdos streaming.",
+
+        heroImage:
+            "images/profile.jpg",
+
+        heroImageAlt:
+            "Ricardo Duarte",
 
         // ********** Zona Sobre Mim *************
         aboutTitle: "Sobre Mim",
@@ -99,6 +117,25 @@ const content = {
     },
 
     en: {
+        // ********** Zona de Landing - Hero *************
+        heroSubtitle:
+            "Audiovisual Localization",
+
+        heroFirstName:
+            "Ricardo",
+
+        heroLastName:
+            "Duarte",
+
+        heroDescription:
+            "Specialized in audiovisual translation, localization and adaptation for European Portuguese. I have worked for more than 10 years on scripted and unscripted content, including TV series, reality shows, documentaries and streaming content.",
+
+        heroImage:
+            "images/profile.jpg",
+        
+        heroImageAlt:
+            "Ricardo Duarte",
+        
         // ********** Zona Sobre Mim *************
         aboutTitle: "About Me",
 
