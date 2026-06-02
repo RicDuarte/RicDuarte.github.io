@@ -47,6 +47,35 @@ function renderExperience(lang) {
 
 }
 
+// Função que renderiza dinamicamente a parte das Skills
+function renderSkills(lang) {
+
+    const container =
+        document.getElementById(
+            "skills-container"
+        );
+
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    content[lang].skills
+        .forEach(skill => {
+
+            container.innerHTML += `
+
+                <div class="skill">
+
+                    ${skill}
+
+                </div>
+
+            `;
+
+        });
+
+}
+
 function loadLanguage(lang) {
 
     setText(
@@ -110,6 +139,7 @@ function loadLanguage(lang) {
     );
     
     renderExperience(lang);
+    renderSkills(lang);
     
     localStorage.setItem(
         "language",
