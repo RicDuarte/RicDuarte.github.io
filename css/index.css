@@ -240,8 +240,12 @@ nav{
   color:#f5f5f5;
 }
 
-.hero-left h1 span{
+.hero-left h1 .hero-name-red{
   color:var(--accent);
+}
+
+.hero-left h1 .hero-name-white{
+  color:#f5f5f5;
 }
 
 .hero-description{
