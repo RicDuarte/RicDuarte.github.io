@@ -21,16 +21,42 @@
 
   <a href="../index.html"
      class="logo">
-     RICARDO DUARTE
+    RICARDO DUARTE
   </a>
 
   <div class="nav-links">
 
-    <a href="../index.html">Sobre Mim</a>
+    <a id="nav-about"
+       href="../index.html">
+    </a>
 
-    <a href="portfolio.html">Portefólio</a>
+    <a id="nav-portfolio"
+       href="portfolio.html">
+    </a>
 
-    <a href="contactos.html">Contactos</a>
+    <a id="nav-contact"
+       href="contactos.html">
+    </a>
+
+  </div>
+
+  <div class="language-switch">
+
+    <span
+      class="lang-option"
+      data-lang="pt"
+      onclick="loadLanguage('pt')">
+      PT
+    </span>
+
+    <span class="lang-separator">/</span>
+
+    <span
+      class="lang-option"
+      data-lang="en"
+      onclick="loadLanguage('en')">
+      EN
+    </span>
 
   </div>
 
@@ -288,7 +314,7 @@
 
         <a href="#">LinkedIn</a>
 
-        <a href="pages/contactos.html">Email</a>
+        <a href="contactos.html">Email</a>
 
       </div>
 
@@ -296,6 +322,8 @@
 
   </footer>
 
+<script src="../data/index-content.js"></script>
+<script src="../scripts/language.js"></script>
 <script src="../scripts/script.js"></script>
 
 </body>
