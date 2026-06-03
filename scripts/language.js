@@ -218,6 +218,12 @@ function loadLanguage(lang) {
         "language",
         lang
     );
+
+    if (typeof updateContact === "function") {
+
+    updateContact(lang);
+
+}
 }
 
 document.addEventListener(
