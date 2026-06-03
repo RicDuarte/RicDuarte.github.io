@@ -97,9 +97,7 @@ function renderPortfolio() {
 
                         <div class="top-row">
 
-                            <div class="play-btn">
-                                ▶
-                            </div>
+                        <div class="play-btn" onclick="openVideo('${project.video}')"> ▶ </div>
 
                             <div class="meta">
 
