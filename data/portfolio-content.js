@@ -74,6 +74,8 @@ const portfolioContent = {
                 platform:
                     "Prime Video",
 
+                video: "https://www.youtube.com/watch?v=GSycMV-_Csw",
+
                 role:
                     "Revisão"
             },
@@ -96,6 +98,8 @@ const portfolioContent = {
 
                 platform:
                     "Netflix",
+
+                video: "https://www.youtube.com/watch?v=WxPApTGWwas",
 
                 role:
                     "Tradução"
