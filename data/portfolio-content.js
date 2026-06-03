@@ -29,6 +29,29 @@ const portfolioContent = {
     projects: {
 
         2026: [
+            {
+                title: "Berlin and The Lady With an Ermine",
+
+                image:
+                    "../images/berlim2.jpg",
+
+                age: "13+",
+
+                type: "Minissérie",
+
+                genres: [
+                    "Espanhol",
+                    "Crime",
+                    "Thriller",
+                    "Drama"
+                ],
+
+                platform:
+                    "Netflix",
+
+                role:
+                    "Tradução"
+            },
 
             {
                 title: "Reacher",
