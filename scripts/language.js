@@ -219,9 +219,12 @@ function loadLanguage(lang) {
         lang
     );
 
+    if (typeof updatePortfolio === "function") {
+        updatePortfolio(lang);
+    }
+
     if (typeof updateContact === "function") {
-    updatePortfolio(lang);
-    updateContact(lang);
+        updateContact(lang);
     }
 }
 
