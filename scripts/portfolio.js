@@ -97,7 +97,7 @@ function renderPortfolio() {
 
                         <div class="top-row">
 
-                        <div class="play-btn" onclick="playVideo(this)"> ▶ </div>
+                        <div class="play-btn" onclick="(this)"> ▶ </div>
 
                             <div class="meta">
 
@@ -156,29 +156,37 @@ function renderPortfolio() {
 }
 
 function playVideo(button) {
-    const imageContainer =
-    card.querySelector(
-        ".card-image"
-    );
 
-const iframe =
-    imageContainer.querySelector(
-        "iframe"
-    );
-    
+    const card =
+        button.closest(".card");
+
+    const imageContainer =
+        card.querySelector(
+            ".card-image"
+        );
+
+    const iframe =
+        imageContainer.querySelector(
+            "iframe"
+        );
+
+    /* FECHAR O TRAILER ATUAL */
+
     if (iframe) {
 
         imageContainer.innerHTML = `
-            <img src="${card.dataset.image}">
+
+            <img
+                src="${card.dataset.image}"
+                alt="">
+
         `;
-    
+
         button.textContent = "▶";
-    
+
         return;
+
     }
-    
-    const card =
-        button.closest(".card");
 
     let videoUrl =
         card.dataset.video;
@@ -197,42 +205,37 @@ const iframe =
 
     }
 
-    const imageContainer =
-        card.querySelector(
-            ".card-image"
-        );
-    
+    /* FECHAR TODOS OS OUTROS TRAILERS */
+
     document
-    .querySelectorAll(".card")
-    .forEach(card => {
+        .querySelectorAll(".card")
+        .forEach(card => {
 
-        const iframe =
-            card.querySelector("iframe");
+            const iframe =
+                card.querySelector(
+                    "iframe"
+                );
 
-        if (!iframe) return;
+            if (!iframe) return;
 
-        const imageContainer =
             card.querySelector(
                 ".card-image"
-            );
+            ).innerHTML = `
 
-        imageContainer.innerHTML = `
+                <img
+                    src="${card.dataset.image}"
+                    alt="">
 
-            <img
-                src="${card.dataset.image}">
+            `;
 
-        `;
-
-        const playButton =
             card.querySelector(
                 ".play-btn"
-            );
+            ).textContent = "▶";
 
-        playButton.textContent =
-            "▶";
+        });
 
-    });
-    
+    /* ABRIR NOVO TRAILER */
+
     imageContainer.innerHTML = `
 
         <iframe
@@ -244,6 +247,7 @@ const iframe =
         </iframe>
 
     `;
+
     button.textContent = "❚❚";
 
 }
