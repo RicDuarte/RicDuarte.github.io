@@ -49,8 +49,10 @@ const portfolioContent = {
                 platform:
                     "Netflix",
 
+                video: "https://www.youtube.com/watch?v=ANMZvvO-SCk",
+
                 role:
-                    "Tradução"
+                    "Tradução",
             },
 
             {
