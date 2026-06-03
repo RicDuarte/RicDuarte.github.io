@@ -666,6 +666,32 @@ padding:
   color: #46d369;
 }
 
+.project-role {
+
+    margin-top: 14px;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    color: #e50914;
+
+}
+
+.project-platform {
+
+    margin-top: 8px;
+
+    font-size: 0.75rem;
+
+    color: #c0c0c0;
+
+}
+
 /* ARROWS */
 
 .arrow {
