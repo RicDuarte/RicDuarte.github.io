@@ -374,10 +374,10 @@ main {
 
   scrollbar-width: none;
 
-padding:
-  35px
-  70px
-  190px;
+  padding:
+    35px
+    70px
+    80px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -405,9 +405,12 @@ padding:
 
 .card:hover {
 
-  transform: scale(1.08);
+  transform: scale(1.12);
 
   z-index: 500;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.8);
 }
 
 /* IMAGE */
@@ -503,7 +506,7 @@ padding:
   box-shadow:
     0 20px 40px rgba(0,0,0,0.85);
 
-  min-height: 120px;
+  min-height: 105px;
 
   border-top:
     1px solid rgba(255,255,255,0.04);
@@ -624,7 +627,7 @@ padding:
 
   gap: 6px;
 
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .genre {
@@ -692,11 +695,15 @@ padding:
 
 .project-platform {
 
-    margin-top:10px;
+    margin-top: 12px;
 
-    font-size:0.75rem;
+    font-size: 0.85rem;
 
-    color:#a8a8a8;
+    font-weight: 600;
+
+    color: #ffffff;
+
+    letter-spacing: 0.3px;
 
 }
 
