@@ -156,9 +156,12 @@ function renderPortfolio() {
 }
 
 function playVideo(button) {
+    console.log("1");
 
     const card =
         button.closest(".card");
+
+       console.log("2");
 
     const imageContainer =
         card.querySelector(
@@ -235,7 +238,7 @@ function playVideo(button) {
         });
 
     /* ABRIR NOVO TRAILER */
-
+console.log("3");
     imageContainer.innerHTML = `
 
         <iframe
@@ -247,6 +250,7 @@ function playVideo(button) {
         </iframe>
 
     `;
+    console.log("4");
 
     button.textContent = "❚❚";
 
