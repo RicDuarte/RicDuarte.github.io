@@ -89,4 +89,29 @@ function updateContact(lang) {
         .textContent =
         contactContent[lang].description;
 
+    document
+        .getElementById("contact-name-label")
+        .textContent =
+        contactContent[lang].nameLabel;
+
+    document
+        .getElementById("contact-email-label")
+        .textContent =
+        contactContent[lang].emailLabel;
+
+    document
+        .getElementById("contact-subject-label")
+        .textContent =
+        contactContent[lang].subjectLabel;
+
+    document
+        .getElementById("contact-message-label")
+        .textContent =
+        contactContent[lang].messageLabel;
+
+    document
+        .getElementById("contact-submit")
+        .textContent =
+        contactContent[lang].submitButton;
+
 }
