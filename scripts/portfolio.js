@@ -155,12 +155,8 @@ function renderPortfolio() {
 }
 
 function playVideo(button) {
-    console.log("1");
-
     const card =
         button.closest(".card");
-
-       console.log("2");
 
     const imageContainer =
         card.querySelector(
@@ -185,6 +181,10 @@ function playVideo(button) {
         `;
 
         button.textContent = "▶";
+        
+        card.classList.remove(
+            "video-playing"
+        );
 
         return;
 
@@ -234,10 +234,18 @@ function playVideo(button) {
                 ".play-btn"
             ).textContent = "▶";
 
+            card.classList.remove(
+                "video-playing"
+            );
+
         });
 
     /* ABRIR NOVO TRAILER */
-console.log("3");
+    
+    card.classList.add(
+        "video-playing"
+    );
+    
     imageContainer.innerHTML = `
 
         <iframe
@@ -249,9 +257,9 @@ console.log("3");
         </iframe>
 
     `;
-    console.log("4");
 
-    button.textContent = "❚❚";
+
+    button.textContent = "■";
 
 }
 
