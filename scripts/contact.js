@@ -76,3 +76,9 @@ function showPopup(text) {
     }, 3000);
 
 }
+
+function updateContact(lang) {
+
+    console.log("Contact language:", lang);
+
+}
