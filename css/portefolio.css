@@ -710,6 +710,21 @@ right: auto;
 
 }
 
+.project-title {
+
+    margin-top: 14px;
+
+    margin-bottom: 12px;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    color: white;
+
+    letter-spacing: 0.3px;
+}
+
 /* ARROWS */
 
 .arrow {
