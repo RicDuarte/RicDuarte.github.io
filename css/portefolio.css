@@ -368,7 +368,7 @@ main {
   gap: 18px;
 
   overflow-x: auto;
-  overflow-y: visible;
+  overflow-y: hidden;
 
   scroll-behavior: smooth;
 
@@ -393,6 +393,7 @@ main {
   max-width: 325px;
 
   position: relative;
+  overflow: visible;
 
   flex-shrink: 0;
 
@@ -405,7 +406,7 @@ main {
 
 .card:hover {
 
-  transform: scale(1.18);
+  transform: scale(1.08);
 
   z-index: 500;
 
@@ -489,11 +490,11 @@ main {
 
 .overlay {
 
-  position: absolute;
+position: relative;
 
-  left: 0;
-  right: 0;
-  top: 220px;
+top: auto;
+left: auto;
+right: auto;
 
   background:
     linear-gradient(
