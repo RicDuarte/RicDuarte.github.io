@@ -83,7 +83,7 @@ function renderPortfolio() {
 
             carousel.innerHTML += `
 
-                <div class="card" data-video="${project.video}">
+                <div class="card" data-video="${project.video}" data-image="${project.image}">
 
                     <div class="card-image">
 
@@ -182,8 +182,35 @@ console.log("PLAY");
         );
     
     document
-        .querySelectorAll("iframe")
-        .forEach(iframe => iframe.remove());
+    .querySelectorAll(".card")
+    .forEach(card => {
+
+        const iframe =
+            card.querySelector("iframe");
+
+        if (!iframe) return;
+
+        const imageContainer =
+            card.querySelector(
+                ".card-image"
+            );
+
+        imageContainer.innerHTML = `
+
+            <img
+                src="${card.dataset.image}">
+
+        `;
+
+        const playButton =
+            card.querySelector(
+                ".play-btn"
+            );
+
+        playButton.textContent =
+            "▶";
+
+    });
     
     imageContainer.innerHTML = `
 
@@ -196,6 +223,7 @@ console.log("PLAY");
         </iframe>
 
     `;
+    button.textContent = "❚❚";
 
 }
 
