@@ -26,7 +26,13 @@ function renderPortfolio() {
 
     container.innerHTML = "";
 
-    for (const year in portfolioContent.projects) {
+    const years =
+        Object.keys(
+            portfolioContent.projects
+        )
+        .sort((a, b) => b - a);
+
+    for (const year of years) {
 
         const section =
             document.createElement(
@@ -81,7 +87,9 @@ function renderPortfolio() {
 
                     <div class="card-image">
 
-                        <img src="${project.image}">
+                        <img
+                            src="${project.image}"
+                            alt="${project.title}">
 
                     </div>
 
@@ -116,6 +124,12 @@ function renderPortfolio() {
                                 )
                                 .join("")
                             }
+
+                        </div>
+
+                        <div class="project-title">
+
+                            ${project.title}
 
                         </div>
 
