@@ -180,7 +180,11 @@ function playVideo(button) {
         card.querySelector(
             ".card-image"
         );
-
+    
+    document
+        .querySelectorAll("iframe")
+        .forEach(iframe => iframe.remove());
+    
     imageContainer.innerHTML = `
 
         <iframe
