@@ -24,6 +24,87 @@ const portfolioContent = {
         heroDescription:
             "Translation, proofreading and linguistic quality control projects for international streaming platforms."
 
+    },
+
+    projects: {
+
+        2026: [
+
+            {
+                title: "Reacher",
+
+                image:
+                    "../images/reacher.jpg",
+
+                age: "18+",
+
+                type: "Série",
+
+                genres: [
+                    "Crime",
+                    "Thriller",
+                    "Mistério"
+                ],
+
+                platform:
+                    "Prime Video",
+
+                role:
+                    "Revisão"
+            },
+
+            {
+                title: "The Last Kingdom",
+
+                image:
+                    "../images/lastkingdom.jpg",
+
+                age: "16+",
+
+                type: "Série",
+
+                genres: [
+                    "Histórico",
+                    "Drama",
+                    "Ação"
+                ],
+
+                platform:
+                    "Netflix",
+
+                role:
+                    "Tradução"
+            }
+
+        ],
+
+        2025: [
+
+            {
+                title: "Fallout",
+
+                image:
+                    "../images/fallout.jpg",
+
+                age: "18+",
+
+                type: "Série",
+
+                genres: [
+                    "Ficção Científica",
+                    "Ação",
+                    "Aventura"
+                ],
+
+                platform:
+                    "Prime Video",
+
+                role:
+                    "Revisão MTPE"
+            }
+
+        ]
+
     }
 
 };
