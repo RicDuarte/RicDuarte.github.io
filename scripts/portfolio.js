@@ -159,8 +159,22 @@ function playVideo(button) {
     const card =
         button.closest(".card");
 
-    const videoUrl =
+    let videoUrl =
         card.dataset.video;
+
+    if (
+        videoUrl.includes(
+            "youtube.com/watch?v="
+        )
+    ) {
+
+        videoUrl =
+            videoUrl.replace(
+                "watch?v=",
+                "embed/"
+            );
+
+    }
 
     const imageContainer =
         card.querySelector(
@@ -170,6 +184,8 @@ function playVideo(button) {
     imageContainer.innerHTML = `
 
         <iframe
+            width="100%"
+            height="220"
             src="${videoUrl}?autoplay=1"
             allow="autoplay; encrypted-media"
             allowfullscreen>
