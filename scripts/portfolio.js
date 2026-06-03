@@ -83,7 +83,7 @@ function renderPortfolio() {
 
             carousel.innerHTML += `
 
-                <div class="card">
+                <div class="card data-video="${project.video}">
 
                     <div class="card-image">
 
@@ -97,7 +97,7 @@ function renderPortfolio() {
 
                         <div class="top-row">
 
-                        <div class="play-btn" onclick="openVideo('${project.video}')"> ▶ </div>
+                        <div class="play-btn" onclick="playVideo(this)"> ▶ </div>
 
                             <div class="meta">
 
@@ -152,6 +152,30 @@ function renderPortfolio() {
         });
 
     }
+
+}
+function playVideo(button) {
+
+    const card =
+        button.closest(".card");
+
+    const videoUrl =
+        card.dataset.video;
+
+    const imageContainer =
+        card.querySelector(
+            ".card-image"
+        );
+
+    imageContainer.innerHTML = `
+
+        <iframe
+            src="${videoUrl}?autoplay=1"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+
+    `;
 
 }
 
