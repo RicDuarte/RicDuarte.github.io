@@ -588,7 +588,7 @@ padding:
 
   align-items: center;
 
-  gap: 10px;
+  gap: 18px;
 }
 
 .age {
@@ -666,11 +666,21 @@ padding:
   color: #46d369;
 }
 
+/* PROJECT ROLE */
+
 .project-role {
 
-    margin-top: 14px;
+    display: inline-block;
 
-    font-size: 0.8rem;
+    margin-top: 18px;
+
+    padding: 6px 10px;
+
+    border: 1px solid #e50914;
+
+    color: #e50914;
+
+    font-size: 0.72rem;
 
     font-weight: 700;
 
@@ -678,17 +688,19 @@ padding:
 
     letter-spacing: 1px;
 
-    color: #e50914;
-
 }
+
+/* PROJECT PLATFORM */
 
 .project-platform {
 
-    margin-top: 8px;
+    margin-top: 10px;
+
+    color: #a8a8a8;
 
     font-size: 0.75rem;
 
-    color: #c0c0c0;
+    font-weight: 500;
 
 }
 
