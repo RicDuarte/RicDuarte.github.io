@@ -83,7 +83,7 @@ function renderPortfolio() {
 
             carousel.innerHTML += `
 
-                <div class="card data-video="${project.video}">
+                <div class="card" data-video="${project.video}">
 
                     <div class="card-image">
 
