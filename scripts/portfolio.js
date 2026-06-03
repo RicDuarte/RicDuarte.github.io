@@ -96,8 +96,7 @@ function renderPortfolio() {
                     <div class="overlay">
 
                         <div class="top-row">
-
-                        <div class="play-btn" onclick="(this)"> ▶ </div>
+                        <div class="play-btn" onclick="playVideo(this)">▶</div>
 
                             <div class="meta">
 
