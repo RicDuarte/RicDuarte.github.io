@@ -155,7 +155,7 @@ function renderPortfolio() {
 
 }
 function playVideo(button) {
-
+console.log("PLAY");
     const card =
         button.closest(".card");
 
