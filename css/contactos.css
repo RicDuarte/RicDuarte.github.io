@@ -131,13 +131,13 @@
 
     display: block;
 
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 
-    font-size: 0.9rem;
+    color: #d5d5d5;
 
-    color: #d0d0d0;
+    font-size: 0.95rem;
 
-    letter-spacing: 1px;
+    font-weight: 500;
 
 }
 
