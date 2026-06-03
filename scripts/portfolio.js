@@ -154,8 +154,29 @@ function renderPortfolio() {
     }
 
 }
+
 function playVideo(button) {
-console.log("PLAY");
+    const imageContainer =
+    card.querySelector(
+        ".card-image"
+    );
+
+const iframe =
+    imageContainer.querySelector(
+        "iframe"
+    );
+    
+    if (iframe) {
+
+        imageContainer.innerHTML = `
+            <img src="${card.dataset.image}">
+        `;
+    
+        button.textContent = "▶";
+    
+        return;
+    }
+    
     const card =
         button.closest(".card");
 
