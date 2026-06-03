@@ -79,6 +79,14 @@ function showPopup(text) {
 
 function updateContact(lang) {
 
-    console.log("Contact language:", lang);
+    document
+        .getElementById("contact-title")
+        .textContent =
+        contactContent[lang].title;
+
+    document
+        .getElementById("contact-description")
+        .textContent =
+        contactContent[lang].description;
 
 }
