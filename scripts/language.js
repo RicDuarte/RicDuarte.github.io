@@ -220,10 +220,9 @@ function loadLanguage(lang) {
     );
 
     if (typeof updateContact === "function") {
-
+    updatePortfolio(lang);
     updateContact(lang);
-
-}
+    }
 }
 
 document.addEventListener(
