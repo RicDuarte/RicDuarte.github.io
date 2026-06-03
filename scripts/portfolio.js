@@ -16,3 +16,13 @@ function updatePortfolio(lang) {
         portfolioContent[lang].heroDescription;
 
 }
+
+function renderPortfolio() {
+
+    console.log(
+        portfolioContent.projects
+    );
+
+}
+
+renderPortfolio();
