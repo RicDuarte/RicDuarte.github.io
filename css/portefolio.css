@@ -368,7 +368,7 @@ main {
   gap: 18px;
 
   overflow-x: auto;
-  overflow-y: visible;
+  overflow-y: hidden;
 
   scroll-behavior: smooth;
 
