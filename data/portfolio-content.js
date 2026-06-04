@@ -66,7 +66,10 @@ const portfolioContent = {
 
                 age: "18+",
 
-                type: "Série",
+                type: {
+                    pt: "Série",
+                    en: "Series"
+                },
 
                 genres: [
                     "Crime",
