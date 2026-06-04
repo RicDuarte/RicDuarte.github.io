@@ -37,7 +37,7 @@ const portfolioContent = {
 
                 age: "13+",
 
-                type: "Minissérie",
+                type: "miniseries",
 
                 genres: [
                     "Espanhol",
@@ -66,10 +66,7 @@ const portfolioContent = {
 
                 age: "18+",
 
-                type: {
-                    pt: "Série",
-                    en: "Series"
-                },
+                type: "series",
 
                 genres: [
                     "Crime",
@@ -96,7 +93,7 @@ const portfolioContent = {
 
                 age: "16+",
 
-                type: "Série",
+                type: "series",
 
                 genres: [
                     "Histórico",
@@ -125,7 +122,7 @@ const portfolioContent = {
 
                 age: "18+",
 
-                type: "Série",
+                type: "series",
 
                 genres: [
                     "Ficção Científica",
