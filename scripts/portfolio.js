@@ -132,7 +132,7 @@ function renderPortfolio() {
 
                         <div class="project-platform">
 
-                            Disponível na ${project.platform}
+                            Disponível ${project.platformPreposition} ${project.platform}
 
                         </div>
 
