@@ -40,10 +40,10 @@ const portfolioContent = {
                 type: "miniseries",
 
                 genres: [
-                    "Espanhol",
-                    "Crime",
-                    "Thriller",
-                    "Drama"
+                    "spanish",
+                    "crime",
+                    "thriller",
+                    "drama"
                 ],
 
                 platform:
@@ -69,9 +69,9 @@ const portfolioContent = {
                 type: "series",
 
                 genres: [
-                    "Crime",
-                    "Thriller",
-                    "Mistério"
+                    "crime",
+                    "thriller",
+                    "mistery"
                 ],
 
                 platform:
@@ -96,9 +96,9 @@ const portfolioContent = {
                 type: "series",
 
                 genres: [
-                    "Histórico",
-                    "Drama",
-                    "Ação"
+                    "historic",
+                    "drama",
+                    "action"
                 ],
 
                 platform:
