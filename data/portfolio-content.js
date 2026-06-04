@@ -47,7 +47,10 @@ const portfolioContent = {
                 ],
 
                 platform:
-                    "Netflix",
+                "Netflix",
+            
+                platformArticle:
+                    "na",
 
                 video: "https://www.youtube.com/watch?v=ddT_eY7Mlg4",
 
@@ -73,6 +76,8 @@ const portfolioContent = {
 
                 platform:
                     "Prime Video",
+                platformArticle:
+                    "no",
 
                 video: "https://www.youtube.com/watch?v=GSycMV-_Csw",
 
