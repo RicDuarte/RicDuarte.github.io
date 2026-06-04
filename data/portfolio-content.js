@@ -71,7 +71,7 @@ const portfolioContent = {
                 genres: [
                     "crime",
                     "thriller",
-                    "mistery"
+                    "mystery"
                 ],
 
                 platform:
@@ -96,9 +96,7 @@ const portfolioContent = {
                 type: "series",
 
                 genres: [
-                    "historic",
-                    "drama",
-                    "action"
+                    "drama"
                 ],
 
                 platform:
