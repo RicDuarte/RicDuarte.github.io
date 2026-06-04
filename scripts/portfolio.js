@@ -14,7 +14,8 @@ function updatePortfolio(lang) {
         .getElementById("portfolio-description")
         .textContent =
         portfolioContent[lang].heroDescription;
-
+    
+    renderPortfolio();
 }
 
 function renderPortfolio() {
