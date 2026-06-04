@@ -104,9 +104,13 @@ function renderPortfolio() {
                                     ${project.age}
                                 </div>
 
-                                <div class="type">
-                                    ${project.type}
-                                </div>
+                            <div class="type">
+                                ${project.type[
+                                    localStorage.getItem(
+                                        "language"
+                                    ) || "pt"
+                                ]}
+                            </div>
 
                             </div>
 
