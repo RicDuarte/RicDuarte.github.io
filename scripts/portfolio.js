@@ -122,7 +122,13 @@ function renderPortfolio() {
                             ${project.genres
                                 .map(
                                     genre =>
-                                    `<div class="genre">${genre}</div>`
+                                    `<div class="genre">${
+                                        portfolioTranslations[
+                                            localStorage.getItem(
+                                                "language"
+                                            ) || "pt"
+                                        ][genre]
+                                    }</div>`
                                 )
                                 .join("")
                             }
