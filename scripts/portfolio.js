@@ -106,11 +106,11 @@ function renderPortfolio() {
                                 </div>
 
                             <div class="type">
-                                ${project.type[
+                                ${portfolioTranslations[
                                     localStorage.getItem(
                                         "language"
                                     ) || "pt"
-                                ]}
+                                ][project.type]}
                             </div>
 
                             </div>
