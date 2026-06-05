@@ -1,3 +1,13 @@
+let currentFilters = {
+
+    platform: "all",
+
+    role: "all",
+
+    type: "all"
+
+};
+
 function updatePortfolio(lang) {
 
     document
@@ -80,87 +90,102 @@ function renderPortfolio() {
             );
 
         portfolioContent.projects[year]
-        .forEach(project => {
+.filter(project => {
 
-            carousel.innerHTML += `
+    if (
+        currentFilters.platform !== "all" &&
+        project.platform !==
+        currentFilters.platform
+    ) {
 
-                <div class="card" data-video="${project.video}" data-image="${project.image}">
+        return false;
 
-                    <div class="card-image">
+    }
 
-                        <img
-                            src="${project.image}"
-                            alt="${project.title}">
+    return true;
 
-                    </div>
+})
+.forEach(project => {
 
-                    <div class="overlay">
+    carousel.innerHTML += `
 
-                        <div class="top-row">
-                        <div class="play-btn" onclick="playVideo(this)">▶</div>
+        <div class="card" data-video="${project.video}" data-image="${project.image}">
 
-                            <div class="meta">
+            <div class="card-image">
 
-                                <div class="age">
-                                    ${project.age}
-                                </div>
+                <img
+                    src="${project.image}"
+                    alt="${project.title}">
 
-                            <div class="type">
-                                ${portfolioTranslations[
-                                    localStorage.getItem(
-                                        "language"
-                                    ) || "pt"
-                                ][project.type]}
-                            </div>
+            </div>
 
-                            </div>
+            <div class="overlay">
 
+                <div class="top-row">
+
+                    <div class="play-btn" onclick="playVideo(this)">▶</div>
+
+                    <div class="meta">
+
+                        <div class="age">
+                            ${project.age}
                         </div>
 
-                        <div class="genres">
-
-                            ${project.genres
-                                .map(
-                                    genre =>
-                                    `<div class="genre">${
-                                        portfolioTranslations[
-                                            localStorage.getItem(
-                                                "language"
-                                            ) || "pt"
-                                        ][genre]
-                                    }</div>`
-                                )
-                                .join("")
-                            }
-
-                        </div>
-
-                        <div class="project-title">
-
-                            ${project.title}
-
-                        </div>
-
-                        <div class="project-platform">
-
-                            Disponível ${project.platformPreposition} ${project.platform}
-
-                        </div>
-
-                        <div class="project-role">
-
-                            ${project.role}
-
+                        <div class="type">
+                            ${portfolioTranslations[
+                                localStorage.getItem(
+                                    "language"
+                                ) || "pt"
+                            ][project.type]}
                         </div>
 
                     </div>
 
                 </div>
 
-            `;
+                <div class="genres">
 
-        });
+                    ${project.genres
+                        .map(
+                            genre =>
+                            `<div class="genre">${
+                                portfolioTranslations[
+                                    localStorage.getItem(
+                                        "language"
+                                    ) || "pt"
+                                ][genre]
+                            }</div>`
+                        )
+                        .join("")
+                    }
 
+                </div>
+
+                <div class="project-title">
+
+                    ${project.title}
+
+                </div>
+
+                <div class="project-platform">
+
+                    Disponível ${project.platformPreposition} ${project.platform}
+
+                </div>
+
+                <div class="project-role">
+
+                    ${project.role}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    `;
+
+});
     }
 
 }
