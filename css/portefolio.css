@@ -185,13 +185,23 @@ nav {
 
 .portfolio-filters {
 
-  display: none;
+  max-height: 0;
 
-  max-width: 1400px;
+  overflow: hidden;
 
-  margin: 30px auto 50px;
+  opacity: 0;
 
-  padding: 0 50px;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease;
+
+}
+
+.portfolio-filters.open {
+
+  max-height: 500px;
+
+  opacity: 1;
 
 }
 
