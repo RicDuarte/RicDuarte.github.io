@@ -99,9 +99,19 @@ function renderPortfolio() {
                     project.platform !==
                     currentFilters.platform
                 ) {
-
+                
                     return false;
-
+                
+                }
+                
+                if (
+                    currentFilters.role !== "all" &&
+                    project.role !==
+                    currentFilters.role
+                ) {
+                
+                    return false;
+                
                 }
 
                 visibleProjects++;
@@ -383,6 +393,40 @@ document
                 );
 
                 currentFilters.platform =
+                    button.dataset.value;
+
+                renderPortfolio();
+
+            }
+        );
+
+    });
+
+document
+    .querySelectorAll(
+        '[data-filter-type="role"]'
+    )
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                document
+                    .querySelectorAll(
+                        '[data-filter-type="role"]'
+                    )
+                    .forEach(chip =>
+                        chip.classList.remove(
+                            "active"
+                        )
+                    );
+
+                button.classList.add(
+                    "active"
+                );
+
+                currentFilters.role =
                     button.dataset.value;
 
                 renderPortfolio();
