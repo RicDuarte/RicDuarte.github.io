@@ -275,3 +275,40 @@ function playVideo(button) {
 }
 
 renderPortfolio();
+
+const filtersButton =
+    document.getElementById(
+        "filters-button"
+    );
+
+const filtersPanel =
+    document.getElementById(
+        "filters-panel"
+    );
+
+filtersButton?.addEventListener(
+    "click",
+    () => {
+
+        filtersPanel.classList.toggle(
+            "open"
+        );
+
+        if (
+            filtersPanel.classList.contains(
+                "open"
+            )
+        ) {
+
+            filtersButton.textContent =
+                "Filtrar Portefólio ▲";
+
+        } else {
+
+            filtersButton.textContent =
+                "Filtrar Portefólio ▼";
+
+        }
+
+    }
+);
