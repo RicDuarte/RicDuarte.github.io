@@ -113,6 +113,15 @@ function renderPortfolio() {
                     return false;
                 
                 }
+                if (
+                    currentFilters.type !== "all" &&
+                    project.type !==
+                    currentFilters.type
+                ) {
+                
+                    return false;
+                
+                }
 
                 visibleProjects++;
 
@@ -427,6 +436,40 @@ document
                 );
 
                 currentFilters.role =
+                    button.dataset.value;
+
+                renderPortfolio();
+
+            }
+        );
+
+    });
+
+document
+    .querySelectorAll(
+        '[data-filter-type="type"]'
+    )
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                document
+                    .querySelectorAll(
+                        '[data-filter-type="type"]'
+                    )
+                    .forEach(chip =>
+                        chip.classList.remove(
+                            "active"
+                        )
+                    );
+
+                button.classList.add(
+                    "active"
+                );
+
+                currentFilters.type =
                     button.dataset.value;
 
                 renderPortfolio();
