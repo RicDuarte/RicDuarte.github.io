@@ -88,6 +88,8 @@ function renderPortfolio() {
             document.getElementById(
                 `carousel${year}`
             );
+        
+        let visibleProjects = 0;
 
         portfolioContent.projects[year]
 .filter(project => {
@@ -102,11 +104,16 @@ function renderPortfolio() {
 
     }
 
+    visibleProjects++;
     return true;
 
 })
 .forEach(project => {
-
+        if (visibleProjects === 0) {
+    
+        section.style.display = "none";
+    
+    }
     carousel.innerHTML += `
 
         <div class="card" data-video="${project.video}" data-image="${project.image}">
