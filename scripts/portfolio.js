@@ -88,111 +88,124 @@ function renderPortfolio() {
             document.getElementById(
                 `carousel${year}`
             );
-        
+
         let visibleProjects = 0;
 
         portfolioContent.projects[year]
-.filter(project => {
+            .filter(project => {
 
-    if (
-        currentFilters.platform !== "all" &&
-        project.platform !==
-        currentFilters.platform
-    ) {
+                if (
+                    currentFilters.platform !== "all" &&
+                    project.platform !==
+                    currentFilters.platform
+                ) {
 
-        return false;
+                    return false;
 
-    }
+                }
 
-    visibleProjects++;
-    return true;
+                visibleProjects++;
 
-})
-.forEach(project => {
-        if (visibleProjects === 0) {
-    
-        section.style.display = "none";
-    
-    }
-    carousel.innerHTML += `
+                return true;
 
-        <div class="card" data-video="${project.video}" data-image="${project.image}">
+            })
+            .forEach(project => {
 
-            <div class="card-image">
+                carousel.innerHTML += `
 
-                <img
-                    src="${project.image}"
-                    alt="${project.title}">
+                    <div
+                        class="card"
+                        data-video="${project.video}"
+                        data-image="${project.image}">
 
-            </div>
+                        <div class="card-image">
 
-            <div class="overlay">
+                            <img
+                                src="${project.image}"
+                                alt="${project.title}">
 
-                <div class="top-row">
-
-                    <div class="play-btn" onclick="playVideo(this)">▶</div>
-
-                    <div class="meta">
-
-                        <div class="age">
-                            ${project.age}
                         </div>
 
-                        <div class="type">
-                            ${portfolioTranslations[
-                                localStorage.getItem(
-                                    "language"
-                                ) || "pt"
-                            ][project.type]}
+                        <div class="overlay">
+
+                            <div class="top-row">
+
+                                <div
+                                    class="play-btn"
+                                    onclick="playVideo(this)">
+                                    ▶
+                                </div>
+
+                                <div class="meta">
+
+                                    <div class="age">
+                                        ${project.age}
+                                    </div>
+
+                                    <div class="type">
+
+                                        ${portfolioTranslations[
+                                            localStorage.getItem(
+                                                "language"
+                                            ) || "pt"
+                                        ][project.type]}
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="genres">
+
+                                ${project.genres
+                                    .map(
+                                        genre =>
+                                        `<div class="genre">${
+                                            portfolioTranslations[
+                                                localStorage.getItem(
+                                                    "language"
+                                                ) || "pt"
+                                            ][genre]
+                                        }</div>`
+                                    )
+                                    .join("")
+                                }
+
+                            </div>
+
+                            <div class="project-title">
+
+                                ${project.title}
+
+                            </div>
+
+                            <div class="project-platform">
+
+                                Disponível ${project.platformPreposition} ${project.platform}
+
+                            </div>
+
+                            <div class="project-role">
+
+                                ${project.role}
+
+                            </div>
+
                         </div>
 
                     </div>
 
-                </div>
+                `;
 
-                <div class="genres">
+            });
 
-                    ${project.genres
-                        .map(
-                            genre =>
-                            `<div class="genre">${
-                                portfolioTranslations[
-                                    localStorage.getItem(
-                                        "language"
-                                    ) || "pt"
-                                ][genre]
-                            }</div>`
-                        )
-                        .join("")
-                    }
+        if (visibleProjects === 0) {
 
-                </div>
+            section.remove();
 
-                <div class="project-title">
+        }
 
-                    ${project.title}
-
-                </div>
-
-                <div class="project-platform">
-
-                    Disponível ${project.platformPreposition} ${project.platform}
-
-                </div>
-
-                <div class="project-role">
-
-                    ${project.role}
-
-                </div>
-
-            </div>
-
-        </div>
-
-    `;
-
-});
     }
 
 }
