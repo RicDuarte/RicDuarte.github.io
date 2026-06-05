@@ -181,6 +181,47 @@ nav {
   width: 100%;
 }
 
+/* FILTERS */
+.portfolio-filters {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin: 40px 0;
+
+  flex-wrap: wrap;
+
+}
+
+.portfolio-filters select {
+
+  background: #1a1a1a;
+
+  color: white;
+
+  border: 1px solid #333;
+
+  border-radius: 8px;
+
+  padding: 12px 18px;
+
+  font-size: 0.95rem;
+
+  cursor: pointer;
+
+  min-width: 220px;
+
+}
+
+.portfolio-filters select:hover {
+
+  border-color: #666;
+
+}
+
 /* HERO */
 
 .hero {
