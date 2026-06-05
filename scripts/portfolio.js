@@ -337,3 +337,37 @@ filtersButton?.addEventListener(
 
     }
 );
+
+document
+    .querySelectorAll(
+        '[data-filter-type="platform"]'
+    )
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                document
+                    .querySelectorAll(
+                        '[data-filter-type="platform"]'
+                    )
+                    .forEach(chip =>
+                        chip.classList.remove(
+                            "active"
+                        )
+                    );
+
+                button.classList.add(
+                    "active"
+                );
+
+                currentFilters.platform =
+                    button.dataset.value;
+
+                renderPortfolio();
+
+            }
+        );
+
+    });
