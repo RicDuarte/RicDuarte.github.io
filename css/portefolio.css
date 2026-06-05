@@ -183,11 +183,9 @@ nav {
 
 /* FILTROS */
 
-/* =========================
-   FILTROS
-========================= */
-
 .portfolio-filters {
+
+  display: none;
 
   max-width: 1400px;
 
@@ -277,6 +275,47 @@ nav {
 
   box-shadow:
     0 0 18px rgba(229,9,20,0.35);
+
+}
+
+.filters-toggle {
+
+  display: flex;
+
+  justify-content: center;
+
+  margin: 30px 0;
+
+}
+
+#filters-button {
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 999px;
+
+  font-family: inherit;
+
+  font-size: 0.95rem;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+
+}
+
+#filters-button:hover {
+
+  border-color: #e50914;
+
+  box-shadow:
+    0 0 15px rgba(229,9,20,0.25);
 
 }
 
