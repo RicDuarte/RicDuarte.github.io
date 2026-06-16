@@ -101,6 +101,31 @@ const portfolioContent = {
 
                 role:
                     "Revisão MTPE"
+            },
+
+            {
+                title: "Person of Interest",
+
+                image:
+                    "../images/personofinterest.jpg",
+
+                age: "16+",
+
+                type: "series",
+
+                genres: [
+                    "crime",
+                    "fantasy",
+                    "scifi"
+                ],
+
+                platform:
+                    "HBO MAX",
+
+                video: "https://www.youtube.com/watch?v=WYDWSNMTauQ",
+
+                role:
+                    "Revisão MTPE"
             }
 
         ],
