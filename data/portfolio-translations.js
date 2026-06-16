@@ -123,7 +123,16 @@ const portfolioTranslations = {
             "Crianças",
         
         comedy:
-            "Comédia"
+            "Comédia",
+
+        reality:
+            "Reality Show",
+
+        contest:
+            "Concurso",
+
+        romance:
+            "Romance"
     },
 
     en: {
@@ -249,7 +258,16 @@ const portfolioTranslations = {
             "Kids",
         
         comedy:
-            "Comedy"
+            "Comedy",
+        
+        reality:
+            "Reality Show",
+
+        contest:
+            "Contest",
+
+        romance:
+            "Romance"
     }
 
 };
