@@ -378,9 +378,15 @@ function renderPortfolio() {
                             </div>
 
                             <div class="project-role">
-
-                                ${project.role}
-
+                            
+                                ${
+                                    portfolioTranslations[
+                                        localStorage.getItem(
+                                            "language"
+                                        ) || "pt"
+                                    ][project.role]
+                                }
+                            
                             </div>
 
                         </div>
