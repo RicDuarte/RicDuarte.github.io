@@ -398,21 +398,24 @@ filtersButton?.addEventListener(
             "open"
         );
 
-        if (
-            filtersPanel.classList.contains(
-                "open"
-            )
-        ) {
+        const lang =
+            localStorage.getItem(
+                "language"
+            ) || "pt";
 
-            filtersButton.textContent =
-                "Filtrar Portefólio ▲";
+        const label =
+            portfolioTranslations[
+                lang
+            ].filtersButton;
 
-        } else {
-
-            filtersButton.textContent =
-                "Filtrar Portefólio ▼";
-
-        }
+        filtersButton.textContent =
+            `${label} ${
+                filtersPanel.classList.contains(
+                    "open"
+                )
+                ? "▲"
+                : "▼"
+            }`;
 
     }
 );
