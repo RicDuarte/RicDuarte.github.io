@@ -49,6 +49,122 @@ function updatePortfolioFilters(lang) {
     ).textContent =
         t.content;
 
+    document.getElementById(
+        "platform-all-chip"
+    ).textContent =
+        t.all;
+
+    document.getElementById(
+        "role-all-chip"
+    ).textContent =
+        t.all;
+
+    document.getElementById(
+        "type-all-chip"
+    ).textContent =
+        t.all;
+
+    document
+        .querySelectorAll(
+            '[data-filter-type="role"]'
+        )
+        .forEach(chip => {
+
+            switch (
+                chip.dataset.value
+            ) {
+
+                case "Tradução":
+
+                    chip.textContent =
+                        t.translation;
+
+                    break;
+
+                case "Tradução MTPE":
+
+                    chip.textContent =
+                        t.translationMTPE;
+
+                    break;
+
+                case "Revisão":
+
+                    chip.textContent =
+                        t.review;
+
+                    break;
+
+                case "Revisão MTPE":
+
+                    chip.textContent =
+                        t.reviewMTPE;
+
+                    break;
+
+                case "Metadata - Tradução":
+
+                    chip.textContent =
+                        t.metadataTranslation;
+
+                    break;
+
+                case "Metadata - Revisão":
+
+                    chip.textContent =
+                        t.metadataReview;
+
+                    break;
+
+            }
+
+        });
+
+    document
+        .querySelectorAll(
+            '[data-filter-type="type"]'
+        )
+        .forEach(chip => {
+
+            if (
+                t[chip.dataset.value]
+            ) {
+
+                chip.textContent =
+                    t[chip.dataset.value];
+
+            }
+
+        });
+
+    document
+        .querySelectorAll(
+            '[data-filter-type="platform"]'
+        )
+        .forEach(chip => {
+
+            switch (
+                chip.dataset.value
+            ) {
+
+                case "Canais de TV":
+
+                    chip.textContent =
+                        t.tvChannels;
+
+                    break;
+
+                case "Outros":
+
+                    chip.textContent =
+                        t.others;
+
+                    break;
+
+            }
+
+        });
+
     const button =
         document.getElementById(
             "filters-button"
@@ -57,12 +173,16 @@ function updatePortfolioFilters(lang) {
     if (button) {
 
         const isOpen =
-            button.textContent.includes(
-                "▲"
+            filtersPanel?.classList.contains(
+                "open"
             );
 
         button.textContent =
-            `${t.filtersButton} ${isOpen ? "▲" : "▼"}`;
+            `${t.filtersButton} ${
+                isOpen
+                    ? "▲"
+                    : "▼"
+            }`;
 
     }
 
