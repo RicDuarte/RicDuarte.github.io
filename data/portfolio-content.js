@@ -49,9 +49,6 @@ const portfolioContent = {
                 platform:
                 "Netflix",
             
-                platformPreposition:
-                    "na",
-
                 video: "https://www.youtube.com/watch?v=ddT_eY7Mlg4",
 
                 role:
@@ -76,9 +73,7 @@ const portfolioContent = {
 
                 platform:
                     "Prime Video",
-                platformPreposition:
-                    "no",
-
+                
                 video: "https://www.youtube.com/watch?v=GSycMV-_Csw",
 
                 role:
@@ -130,8 +125,6 @@ const portfolioContent = {
 
                 platform:
                     "Prime Video",
-                platformPreposition:
-                    "no",
 
                 role:
                     "Revisão MTPE"
