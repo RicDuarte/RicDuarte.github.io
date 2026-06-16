@@ -1,6 +1,31 @@
 const portfolioTranslations = {
 
     pt: {
+        
+        availableOn:
+            "Disponível",
+        
+        platformPrepositions: {
+        
+            "Netflix":
+                "na",
+        
+            "Prime Video":
+                "no",
+        
+            "Disney+":
+                "no",
+        
+            "HBO Max":
+                "na",
+        
+            "Canais de TV":
+                "nos",
+        
+            "Outros":
+                "noutros"
+        
+        },
     
         filtersButton:
             "Filtrar Portefólio",
@@ -82,6 +107,32 @@ const portfolioTranslations = {
     },
 
     en: {
+        
+        availableOn:
+            "Available on",
+        
+        platformPrepositions: {
+
+            "Netflix":
+                "",
+        
+            "Prime Video":
+                "",
+        
+            "Disney+":
+                "",
+        
+            "HBO Max":
+                "",
+        
+            "Canais de TV":
+                "",
+        
+            "Outros":
+                ""
+        
+        },
+        
         filtersButton:
             "Filter Portfolio",
 
