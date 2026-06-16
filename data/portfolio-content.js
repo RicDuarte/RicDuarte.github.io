@@ -120,7 +120,7 @@ const portfolioContent = {
                 ],
 
                 platform:
-                    "HBO MAX",
+                    "HBO Max",
 
                 video: "https://www.youtube.com/watch?v=WYDWSNMTauQ",
 
