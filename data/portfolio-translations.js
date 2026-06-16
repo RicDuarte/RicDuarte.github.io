@@ -120,7 +120,10 @@ const portfolioTranslations = {
             "Animação",
     
         kids:
-            "Crianças"
+            "Crianças",
+        
+        comedy:
+            "Comédia"
     },
 
     en: {
@@ -243,7 +246,10 @@ const portfolioTranslations = {
             "Animation",
     
         kids:
-            "Kids"
+            "Kids",
+        
+        comedy:
+            "Comedy"
     }
 
 };
