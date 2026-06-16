@@ -25,7 +25,47 @@ function updatePortfolio(lang) {
         .textContent =
         portfolioContent[lang].heroDescription;
     
+    updatePortfolioFilters(lang);
     renderPortfolio();
+}
+
+function updatePortfolioFilters(lang) {
+
+    const t =
+        portfolioTranslations[lang];
+
+    document.getElementById(
+        "filter-platform-title"
+    ).textContent =
+        t.platform;
+
+    document.getElementById(
+        "filter-role-title"
+    ).textContent =
+        t.role;
+
+    document.getElementById(
+        "filter-content-title"
+    ).textContent =
+        t.content;
+
+    const button =
+        document.getElementById(
+            "filters-button"
+        );
+
+    if (button) {
+
+        const isOpen =
+            button.textContent.includes(
+                "▲"
+            );
+
+        button.textContent =
+            `${t.filtersButton} ${isOpen ? "▲" : "▼"}`;
+
+    }
+
 }
 
 function renderPortfolio() {
