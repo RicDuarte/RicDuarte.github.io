@@ -91,174 +91,218 @@
 </section>
 
 <main>
-  
-  <section class="filters-toggle">
 
-    <button id="filters-button">
+    <section class="filters-toggle">
 
-        Filtrar Portefólio ▼
+        <button id="filters-button">
 
-    </button>
+            Filtrar Portefólio ▼
 
-</section>
+        </button>
 
-  <section id="filters-panel" class="portfolio-filters">
+    </section>
 
     <section id="filters-panel" class="portfolio-filters">
 
-    <div class="search-container">
+        <div class="search-container">
 
-        <input
-            type="text"
-            id="title-search"
-            placeholder="🔍 Procurar título...">
-
-    </div>
-
-    <div class="filter-group">
-
-        ...
-
-    <div class="filter-group">
-
-        <h3 id="filter-platform-title"></h3>
-
-        <div class="filter-chips">
-
-            <button
-                class="filter-chip active"
-                data-filter-type="platform"
-                data-value="all"
-                id="platform-all-chip">
-            </button>
-            
-            <button
-                class="filter-chip"
-                data-filter-type="platform"
-                data-value="Netflix"
-              >
-            
-                Netflix
-            
-            </button>
-            
-            <button
-                class="filter-chip"
-                data-filter-type="platform"
-                data-value="Prime Video">
-            
-                Prime Video
-            
-            </button>
-            
-            <button
-                class="filter-chip"
-                data-filter-type="platform"
-                data-value="Disney+">
-            
-                Disney+
-            
-            </button>
-            
-            <button
-                class="filter-chip"
-                data-filter-type="platform"
-                data-value="HBO Max">
-            
-                HBO Max
-            
-            </button>
-            
-            <button
-                class="filter-chip"
-                data-filter-type="platform"
-                data-value="Canais de TV">
-            
-                Canais de TV
-            
-            </button>
-            
-            <button
-                class="filter-chip"
-                data-filter-type="platform"
-                data-value="Outros">
-            
-                Outros
-            
-            </button>
+            <input
+                type="text"
+                id="title-search"
+                placeholder="🔍 Procurar título...">
 
         </div>
 
-    </div>
+        <div class="filter-group">
 
-    <div class="filter-group">
+            <h3 id="filter-platform-title"></h3>
 
-        <h3 id="filter-role-title"></h3>
+            <div class="filter-chips">
 
-        <div class="filter-chips">
+                <button
+                    class="filter-chip active"
+                    data-filter-type="platform"
+                    data-value="all"
+                    id="platform-all-chip">
+                </button>
 
-            <button class="filter-chip active" data-filter-type="role" data-value="all" id="role-all-chip">
-                Todos
-            </button>
+                <button
+                    class="filter-chip"
+                    data-filter-type="platform"
+                    data-value="Netflix">
 
-            <button class="filter-chip" data-filter-type="role" data-value="Tradução">
-                Tradução
-            </button>
+                    Netflix
 
-            <button class="filter-chip" data-filter-type="role" data-value="Tradução MTPE">
-                Tradução MTPE
-            </button>
+                </button>
 
-            <button class="filter-chip" data-filter-type="role" data-value="Revisão">
-                Revisão
-            </button>
+                <button
+                    class="filter-chip"
+                    data-filter-type="platform"
+                    data-value="Prime Video">
 
-            <button class="filter-chip" data-filter-type="role" data-value="Revisão MTPE">
-                Revisão MTPE
-            </button>
+                    Prime Video
 
-            <button class="filter-chip" data-filter-type="role" data-value="Metadata - Tradução">
-                Metadata - Tradução
-            </button>
+                </button>
 
-            <button class="filter-chip" data-filter-type="role" data-value="Metadata - Revisão">
-                Metadata - Revisão
-            </button>
+                <button
+                    class="filter-chip"
+                    data-filter-type="platform"
+                    data-value="Disney+">
+
+                    Disney+
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-filter-type="platform"
+                    data-value="HBO Max">
+
+                    HBO Max
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-filter-type="platform"
+                    data-value="Canais de TV">
+
+                    Canais de TV
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-filter-type="platform"
+                    data-value="Outros">
+
+                    Outros
+
+                </button>
+
+            </div>
 
         </div>
 
-    </div>
+        <div class="filter-group">
 
-    <div class="filter-group">
+            <h3 id="filter-role-title"></h3>
 
-        <h3 id="filter-content-title"></h3>
+            <div class="filter-chips">
 
-        <div class="filter-chips">
+                <button
+                    class="filter-chip active"
+                    data-filter-type="role"
+                    data-value="all"
+                    id="role-all-chip">
+                </button>
 
-            <button class="filter-chip active" data-filter-type="type" data-value="all" id="type-all-chip">
-                Todos
-            </button>
+                <button
+                    class="filter-chip"
+                    data-filter-type="role"
+                    data-value="Tradução">
 
-            <button class="filter-chip" data-filter-type="type" data-value="movie">
-                Filme
-            </button>
+                    Tradução
 
-            <button class="filter-chip" data-filter-type="type" data-value="series">
-                Série
-            </button>
+                </button>
 
-            <button class="filter-chip" data-filter-type="type" data-value="miniseries">
-                Minissérie
-            </button>
+                <button
+                    class="filter-chip"
+                    data-filter-type="role"
+                    data-value="Tradução MTPE">
+
+                    Tradução MTPE
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-filter-type="role"
+                    data-value="Revisão">
+
+                    Revisão
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-filter-type="role"
+                    data-value="Revisão MTPE">
+
+                    Revisão MTPE
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-filter-type="role"
+                    data-value="Metadata - Tradução">
+
+                    Metadata - Tradução
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-filter-type="role"
+                    data-value="Metadata - Revisão">
+
+                    Metadata - Revisão
+
+                </button>
+
+            </div>
 
         </div>
 
-    </div>
+        <div class="filter-group">
 
-</section>
-  
-<div id="portfolio-container"></div>
-  
+            <h3 id="filter-content-title"></h3>
+
+            <div class="filter-chips">
+
+                <button
+                    class="filter-chip active"
+                    data-filter-type="type"
+                    data-value="all"
+                    id="type-all-chip">
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-filter-type="type"
+                    data-value="movie">
+
+                    Filme
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-filter-type="type"
+                    data-value="series">
+
+                    Série
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-filter-type="type"
+                    data-value="miniseries">
+
+                    Minissérie
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="portfolio-container"></div>
+
 </main>
 
 <footer>
