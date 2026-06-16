@@ -66,7 +66,7 @@ const portfolioContent = {
                 type: "series",
 
                 genres: [
-                    "comedy",
+                    "comedy"
                 ],
 
                 platform:
