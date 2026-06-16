@@ -988,3 +988,48 @@ right: auto;
   }
 
 }
+
+.search-container {
+
+    margin-bottom: 30px;
+
+}
+
+#title-search {
+
+    width: 100%;
+
+    padding: 14px 18px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 12px;
+
+    color: white;
+
+    font-size: 0.95rem;
+
+    font-family: inherit;
+
+    transition: all 0.25s ease;
+
+}
+
+#title-search::placeholder {
+
+    color: rgba(255,255,255,0.45);
+
+}
+
+#title-search:focus {
+
+    outline: none;
+
+    border-color: #e50914;
+
+    box-shadow:
+        0 0 15px rgba(229,9,20,0.2);
+
+}
