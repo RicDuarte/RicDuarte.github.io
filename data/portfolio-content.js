@@ -79,26 +79,28 @@ const portfolioContent = {
             },
 
             {
-                title: "The Last Kingdom",
+                title: "Love Overboard",
 
                 image:
-                    "../images/lastkingdom.jpg",
+                    "../images/loveoverboard.jpg",
 
                 age: "16+",
 
                 type: "series",
 
                 genres: [
-                    "drama"
+                    "reality",
+                    "contest",
+                    "romance"
                 ],
 
                 platform:
-                    "Netflix",
+                    "Disney+",
 
-                video: "https://www.youtube.com/watch?v=WxPApTGWwas",
+                video: "https://www.youtube.com/watch?v=ODiBUk0O0Wg",
 
                 role:
-                    "Tradução"
+                    "Revisão MTPE"
             }
 
         ],
