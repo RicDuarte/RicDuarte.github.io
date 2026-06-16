@@ -1,6 +1,46 @@
 const portfolioTranslations = {
 
     pt: {
+    
+        filtersButton:
+            "Filtrar Portefólio",
+        
+        platform:
+            "Plataforma",
+        
+        role:
+            "Trabalho",
+        
+        content:
+            "Conteúdo",
+        
+        all:
+            "Todos",
+        
+        tvChannels:
+            "Canais de TV",
+        
+        others:
+            "Outros",
+        
+        translation:
+            "Tradução",
+        
+        translationMTPE:
+            "Tradução MTPE",
+        
+        review:
+            "Revisão",
+        
+        reviewMTPE:
+            "Revisão MTPE",
+        
+        metadataTranslation:
+            "Metadata - Tradução",
+        
+        metadataReview:
+            "Metadata - Revisão",
+        
         movie:
         "Filme",
 
@@ -42,8 +82,47 @@ const portfolioTranslations = {
     },
 
     en: {
+        filtersButton:
+            "Filter Portfolio",
+
+        platform:
+            "Platform",
+        
+        role:
+            "Work Type",
+        
+        content:
+            "Content",
+        
+        all:
+            "All",
+        
+        tvChannels:
+            "TV Channels",
+        
+        others:
+            "Others",
+        
+        translation:
+            "Translation",
+        
+        translationMTPE:
+            "Translation MTPE",
+        
+        review:
+            "Review",
+        
+        reviewMTPE:
+            "Review MTPE",
+        
+        metadataTranslation:
+            "Metadata - Translation",
+        
+        metadataReview:
+            "Metadata - Review",
+        
         movie:
-        "Movie",
+            "Movie",
 
         series:
             "Series",
