@@ -1,6 +1,23 @@
 const portfolioTranslations = {
 
     pt: {
+        "Tradução":
+            "Tradução",
+        
+        "Tradução MTPE":
+            "Tradução MTPE",
+        
+        "Revisão":
+            "Revisão",
+        
+        "Revisão MTPE":
+            "Revisão MTPE",
+        
+        "Metadata - Tradução":
+            "Metadata - Tradução",
+        
+        "Metadata - Revisão":
+            "Metadata - Revisão",
         
         availableOn:
             "Disponível",
@@ -107,6 +124,23 @@ const portfolioTranslations = {
     },
 
     en: {
+        "Tradução":
+            "Translation",
+        
+        "Tradução MTPE":
+            "Translation MTPE",
+        
+        "Revisão":
+            "Review",
+        
+        "Revisão MTPE":
+            "Review MTPE",
+        
+        "Metadata - Tradução":
+            "Metadata - Translation",
+        
+        "Metadata - Revisão":
+            "Metadata - Review",
         
         availableOn:
             "Available on",
