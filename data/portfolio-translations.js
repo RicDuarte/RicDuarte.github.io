@@ -132,7 +132,10 @@ const portfolioTranslations = {
             "Concurso",
 
         romance:
-            "Romance"
+            "Romance",
+
+        scifi:
+            "Ficção Científica"
     },
 
     en: {
@@ -267,7 +270,10 @@ const portfolioTranslations = {
             "Contest",
 
         romance:
-            "Romance"
+            "Romance",
+
+        scifi:
+            "Sci-Fi"
     }
 
 };
