@@ -135,7 +135,10 @@ const portfolioTranslations = {
             "Romance",
 
         scifi:
-            "Ficção Científica"
+            "Ficção Científica",
+
+        fantasy:
+            "Fantasia"
     },
 
     en: {
@@ -273,7 +276,10 @@ const portfolioTranslations = {
             "Romance",
 
         scifi:
-            "Sci-Fi"
+            "Sci-Fi",
+
+        fantasy:
+            "Fantasy"
     }
 
 };
