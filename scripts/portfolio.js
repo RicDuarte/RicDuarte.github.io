@@ -361,8 +361,20 @@ function renderPortfolio() {
 
                             <div class="project-platform">
 
-                                Disponível ${project.platformPreposition} ${project.platform}
-
+                                ${
+                                    localStorage.getItem(
+                                        "language"
+                                    ) === "en"
+                            
+                                    ? `${portfolioTranslations.en.availableOn} ${project.platform}`
+                            
+                                    : `${portfolioTranslations.pt.availableOn} ${
+                                        portfolioTranslations.pt.platformPrepositions[
+                                            project.platform
+                                        ]
+                                    } ${project.platform}`
+                                }
+                                
                             </div>
 
                             <div class="project-role">
