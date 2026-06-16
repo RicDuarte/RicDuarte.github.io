@@ -4,7 +4,9 @@ let currentFilters = {
 
     role: "all",
 
-    type: "all"
+    type: "all",
+
+    search: ""
 
 };
 
@@ -277,6 +279,22 @@ function renderPortfolio() {
                     currentFilters.type !== "all" &&
                     project.type !==
                     currentFilters.type
+                ) {
+                
+                    return false;
+                
+                }
+                if (
+
+                    currentFilters.search !== "" &&
+                
+                    !project.title
+                        .toLowerCase()
+                        .includes(
+                            currentFilters.search
+                                .toLowerCase()
+                        )
+                
                 ) {
                 
                     return false;
@@ -659,3 +677,20 @@ document
         );
 
     });
+
+const titleSearch =
+    document.getElementById(
+        "title-search"
+    );
+
+titleSearch?.addEventListener(
+    "input",
+    () => {
+
+        currentFilters.search =
+            titleSearch.value;
+
+        renderPortfolio();
+
+    }
+);
