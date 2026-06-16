@@ -56,25 +56,23 @@ const portfolioContent = {
             },
 
             {
-                title: "Reacher",
+                title: "Bait",
 
                 image:
-                    "../images/reacher.jpg",
+                    "../images/bait.jpg",
 
                 age: "18+",
 
                 type: "series",
 
                 genres: [
-                    "crime",
-                    "thriller",
-                    "mystery"
+                    "comedy",
                 ],
 
                 platform:
                     "Prime Video",
                 
-                video: "https://www.youtube.com/watch?v=GSycMV-_Csw",
+                video: "https://www.youtube.com/watch?v=FpAhwL91HyA",
 
                 role:
                     "Revisão"
