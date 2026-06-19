@@ -71,7 +71,9 @@
 
     align-items: center;
 
-    gap: 30px;
+    justify-content: flex-start;
+
+    gap: 25px;
 
     margin-top: 10px;
 
@@ -81,9 +83,9 @@
 
     display: flex;
 
-    gap: 15px;
-
     align-items: center;
+
+    gap: 15px;
 
 }
 
@@ -210,6 +212,8 @@
     letter-spacing: 2px;
 
     transition: 0.25s ease;
+    
+    flex-shrink: 0;
 
 }
 
