@@ -51,29 +51,39 @@
 
 }
 
-.contact-grid {
+.contact-form {
 
-    display: grid;
+    max-width: 1200px;
 
-    grid-template-columns:
-        380px
-        1fr;
+    margin: 0 auto;
 
-    gap: 100px;
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
 
 }
 
-/* LEFT COLUMN */
+.contact-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 10px;
+
+}
 
 .contact-socials {
 
     display: flex;
 
-    gap: 25px;
+    gap: 15px;
 
     align-items: center;
-
-    margin-top: 5px;
 
 }
 
