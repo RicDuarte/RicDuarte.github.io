@@ -220,15 +220,19 @@ nav {
 
   margin-bottom: 12px;
 
+  text-align: center;
+
 }
 
 .filter-chips {
+  
+    display: flex;
 
-  display: flex;
+    flex-wrap: wrap;
 
-  flex-wrap: wrap;
+    justify-content: center;
 
-  gap: 10px;
+    gap: 10px;
 
 }
 
@@ -285,13 +289,21 @@ nav {
 
 .filters-toggle {
 
-  display: flex;
+    display: flex;
 
-  justify-content: center;
+    justify-content: center;
 
-  padding-top: 35px;
+    padding-top: 40px;
 
-  margin-bottom: 30px;
+    padding-bottom: 25px;
+
+}
+
+.filters-inner {
+
+    max-width: 1300px;
+
+    margin: 0 auto;
 
 }
 
