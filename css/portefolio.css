@@ -180,6 +180,8 @@ nav {
 
   opacity: 0;
 
+  padding: 0 54px;
+
   transition:
     max-height 0.35s ease,
     opacity 0.25s ease;
@@ -188,15 +190,19 @@ nav {
 
 .portfolio-filters.open {
 
-  max-height: 500px;
+  max-height: 700px;
 
   opacity: 1;
 
+  padding-top: 20px;
+
+  padding-bottom: 20px;
+  
 }
 
 .filter-group {
 
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 
 }
 
@@ -283,7 +289,9 @@ nav {
 
   justify-content: center;
 
-  margin: 30px 0;
+  padding-top: 35px;
+
+  margin-bottom: 30px;
 
 }
 
@@ -980,7 +988,9 @@ right: auto;
 
 .search-container {
 
-    margin-bottom: 30px;
+    max-width: 900px;
+
+    margin: 0 auto 40px auto;
 
 }
 
