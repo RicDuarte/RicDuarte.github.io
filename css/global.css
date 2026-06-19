@@ -61,8 +61,6 @@ body {
         100% - (var(--page-padding) * 2)
     );
 
-    max-width: 1800px;
-
     margin: 0 auto;
 
 }
