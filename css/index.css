@@ -137,13 +137,6 @@ nav{
   width:100%;
 }
 
-/* CONTAINER */
-
-.container{
-  width:min(1300px,90%);
-  margin:auto;
-}
-
 /* HERO */
 
 .hero{
