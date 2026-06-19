@@ -288,14 +288,12 @@ nav {
 }
 
 .filters-toggle {
-
+  
     display: flex;
 
     justify-content: center;
 
-    padding-top: 40px;
-
-    padding-bottom: 25px;
+    margin-bottom: 40px;
 
 }
 
