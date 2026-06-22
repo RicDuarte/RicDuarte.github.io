@@ -359,14 +359,16 @@ const portfolioContent = {
                 type: "documentary",
 
                 genres: [
-                    "Documentário"
+                    "documentary"
                 ],
 
                 platform:
-                    "Netflix",
+                "Netflix",
+            
+                video: "https://www.youtube.com/watch?v=9B7J5KhYBz8",
 
                 role:
-                    "Tradução"
+                    "Tradução",
             }
 
         ],
