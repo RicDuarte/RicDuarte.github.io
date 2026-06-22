@@ -138,7 +138,13 @@ const portfolioTranslations = {
             "Ficção Científica",
 
         fantasy:
-            "Fantasia"
+            "Fantasia",
+        
+        japanese:
+            "Japonês",
+        
+        korean:
+            "Coreano"
     },
 
     en: {
@@ -279,7 +285,13 @@ const portfolioTranslations = {
             "Sci-Fi",
 
         fantasy:
-            "Fantasy"
+            "Fantasy",
+
+        japanese:
+            "Japanese",
+
+        korean:
+            "Korean"
     }
 
 };
