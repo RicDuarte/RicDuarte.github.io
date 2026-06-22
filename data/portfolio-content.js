@@ -315,7 +315,8 @@ const portfolioContent = {
                 genres: [
 					"fantasy",
 					"thriller",
-					"scifi"
+					"scifi",
+					"korean"
 					
                 ],
 
