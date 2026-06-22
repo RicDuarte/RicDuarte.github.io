@@ -155,7 +155,223 @@ const portfolioContent = {
                     "Revisão MTPE"
             }
 
-        ]
+        ],
+		
+		2024: [
+
+            {
+                title: "Sample",
+
+                image:
+                    "../images/fallout.jpg",
+
+                age: "18+",
+
+                type: "series",
+
+                genres: [
+                    "Ficção Científica",
+                    "Ação",
+                    "Aventura"
+                ],
+
+                platform:
+                    "Prime Video",
+
+                role:
+                    "Revisão MTPE"
+            }
+
+        ],
+		
+		2023: [
+
+            {
+                title: "Sample",
+
+                image:
+                    "../images/fallout.jpg",
+
+                age: "18+",
+
+                type: "series",
+
+                genres: [
+                    "Ficção Científica",
+                    "Ação",
+                    "Aventura"
+                ],
+
+                platform:
+                    "Prime Video",
+
+                role:
+                    "Revisão MTPE"
+            }
+
+        ],
+		
+		2022: [
+
+            {
+                title: "Sample",
+
+                image:
+                    "../images/fallout.jpg",
+
+                age: "18+",
+
+                type: "series",
+
+                genres: [
+                    "Ficção Científica",
+                    "Ação",
+                    "Aventura"
+                ],
+
+                platform:
+                    "Prime Video",
+
+                role:
+                    "Revisão MTPE"
+            }
+
+        ],
+		
+		2021: [
+
+            {
+                title: "Sample",
+
+                image:
+                    "../images/fallout.jpg",
+
+                age: "18+",
+
+                type: "series",
+
+                genres: [
+                    "Ficção Científica",
+                    "Ação",
+                    "Aventura"
+                ],
+
+                platform:
+                    "Prime Video",
+
+                role:
+                    "Revisão MTPE"
+            }
+
+        ],
+		
+		2020: [
+
+            {
+                title: "Sample",
+
+                image:
+                    "../images/fallout.jpg",
+
+                age: "18+",
+
+                type: "series",
+
+                genres: [
+                    "Ficção Científica",
+                    "Ação",
+                    "Aventura"
+                ],
+
+                platform:
+                    "Prime Video",
+
+                role:
+                    "Revisão MTPE"
+            }
+
+        ],
+		
+		2019: [
+
+            {
+                title: "Sample",
+
+                image:
+                    "../images/fallout.jpg",
+
+                age: "18+",
+
+                type: "series",
+
+                genres: [
+                    "Ficção Científica",
+                    "Ação",
+                    "Aventura"
+                ],
+
+                platform:
+                    "Prime Video",
+
+                role:
+                    "Revisão MTPE"
+            }
+
+        ],
+		
+		2018: [
+
+            {
+                title: "Sample",
+
+                image:
+                    "../images/fallout.jpg",
+
+                age: "18+",
+
+                type: "series",
+
+                genres: [
+                    "Ficção Científica",
+                    "Ação",
+                    "Aventura"
+                ],
+
+                platform:
+                    "Prime Video",
+
+                role:
+                    "Revisão MTPE"
+            }
+
+        ],
+		
+		2017: [
+
+            {
+                title: "Women at War 1939-1945",
+
+                image:
+                    "../images/womenatwar.jpg",
+
+                age: "13+",
+
+                type: "documentary",
+
+                genres: [
+                    "Documentário"
+                ],
+
+                platform:
+                    "Netflix",
+
+                role:
+                    "Tradução"
+            }
+
+        ],
+		
+		
 
     }
 
