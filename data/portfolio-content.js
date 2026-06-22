@@ -133,26 +133,27 @@ const portfolioContent = {
         2025: [
 
             {
-                title: "Fallout",
+                title: "Between Lands",
 
                 image:
-                    "../images/fallout.jpg",
+                    "../images/entretierras.jpg",
 
-                age: "18+",
+                age: "13+",
 
                 type: "series",
 
                 genres: [
-                    "Ficção Científica",
-                    "Ação",
-                    "Aventura"
+					"drama",
+					"spanish"
                 ],
 
                 platform:
-                    "Prime Video",
+                "Netflix",
+            
+                video: "https://www.youtube.com/watch?v=9MAGNwHYVbM&t=21s",
 
                 role:
-                    "Revisão MTPE"
+                    "Tradução",
             }
 
         ],
@@ -160,26 +161,27 @@ const portfolioContent = {
 		2024: [
 
             {
-                title: "Sample",
+                title: "Outer Range - S2",
 
                 image:
-                    "../images/fallout.jpg",
+                    "../images/outerrange.jpg",
 
-                age: "18+",
+                age: "16+",
 
                 type: "series",
 
                 genres: [
-                    "Ficção Científica",
-                    "Ação",
-                    "Aventura"
+					"drama",
+					"thriller"
                 ],
 
                 platform:
-                    "Prime Video",
+                "Prime Video",
+            
+                video: "https://www.youtube.com/watch?v=8UkDdTMZh14",
 
                 role:
-                    "Revisão MTPE"
+                    "Tradução",
             }
 
         ],
@@ -187,26 +189,29 @@ const portfolioContent = {
 		2023: [
 
             {
-                title: "Sample",
+                title: "Berlin and the Paris Jewels",
 
                 image:
-                    "../images/fallout.jpg",
+                    "../images/berlimparis.jpg",
 
-                age: "18+",
+                age: "13+",
 
-                type: "series",
+                type: "miniseries",
 
                 genres: [
-                    "Ficção Científica",
-                    "Ação",
-                    "Aventura"
+					"drama",
+					"spanish",
+					"adventure",
+					"crime"
                 ],
 
                 platform:
-                    "Prime Video",
+                "Netflix",
+            
+                video: "https://www.youtube.com/watch?v=pwf7wLaQqqs",
 
                 role:
-                    "Revisão MTPE"
+                    "Tradução",
             }
 
         ],
@@ -214,26 +219,27 @@ const portfolioContent = {
 		2022: [
 
             {
-                title: "Sample",
+                title: "Gannibal",
 
                 image:
-                    "../images/fallout.jpg",
+                    "../images/gannibal.jpg",
 
-                age: "18+",
+                age: "16+",
 
                 type: "series",
 
                 genres: [
-                    "Ficção Científica",
-                    "Ação",
-                    "Aventura"
+					"japanese",
+					"horror"
                 ],
 
                 platform:
-                    "Prime Video",
+                "Disney+",
+            
+                video: "https://www.youtube.com/watch?v=LSXLW-_EWmE",
 
                 role:
-                    "Revisão MTPE"
+                    "Tradução",
             }
 
         ],
@@ -241,26 +247,27 @@ const portfolioContent = {
 		2021: [
 
             {
-                title: "Sample",
+                title: "Money Heist - T5",
 
                 image:
-                    "../images/fallout.jpg",
+                    "../images/casadepapel.jpg",
 
-                age: "18+",
+                age: "16+",
 
                 type: "series",
 
                 genres: [
-                    "Ficção Científica",
-                    "Ação",
-                    "Aventura"
+					"spanish",
+					"thriller"
                 ],
 
                 platform:
-                    "Prime Video",
+                "Netflix",
+            
+                video: "https://www.youtube.com/watch?v=6UMmM_XmFVg",
 
                 role:
-                    "Revisão MTPE"
+                    "Tradução",
             }
 
         ],
@@ -268,26 +275,27 @@ const portfolioContent = {
 		2020: [
 
             {
-                title: "Sample",
+                title: "Vis a Vis - T5",
 
                 image:
-                    "../images/fallout.jpg",
+                    "../images/visavis.jpg",
 
-                age: "18+",
+                age: "16+",
 
                 type: "series",
 
                 genres: [
-                    "Ficção Científica",
-                    "Ação",
-                    "Aventura"
+					"spanish",
+					"thriller"
                 ],
 
                 platform:
-                    "Prime Video",
+                "Netflix",
+            
+                video: "https://www.youtube.com/watch?v=binDqb7YPvY",
 
                 role:
-                    "Revisão MTPE"
+                    "Tradução",
             }
 
         ],
@@ -295,53 +303,59 @@ const portfolioContent = {
 		2019: [
 
             {
-                title: "Sample",
+                title: "Memories of Alhambra",
 
                 image:
-                    "../images/fallout.jpg",
+                    "../images/memoriesofalhambra.jpg",
 
-                age: "18+",
+                age: "16+",
 
                 type: "series",
 
                 genres: [
-                    "Ficção Científica",
-                    "Ação",
-                    "Aventura"
+					"fantasy",
+					"thriller",
+					"scifi"
+					
                 ],
 
                 platform:
-                    "Prime Video",
+                "Netflix",
+            
+                video: "https://www.youtube.com/watch?v=2Lcy3XUDd_A",
 
                 role:
-                    "Revisão MTPE"
+                    "Revisão",
             }
 
         ],
 		
 		2018: [
 
-            {
-                title: "Sample",
+			{
+                title: "Steven Universe",
 
                 image:
-                    "../images/fallout.jpg",
+                    "../images/stevenuniverse.jpg",
 
-                age: "18+",
+                age: "13+",
 
                 type: "series",
 
                 genres: [
-                    "Ficção Científica",
-                    "Ação",
-                    "Aventura"
+                    "kids",
+					"comedy",
+					"fantasy"
+					
                 ],
 
                 platform:
-                    "Prime Video",
+                "Netflix",
+            
+                video: "https://www.youtube.com/watch?v=fZsuug-3r_Q",
 
                 role:
-                    "Revisão MTPE"
+                    "Tradução",
             }
 
         ],
