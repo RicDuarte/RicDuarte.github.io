@@ -66,6 +66,11 @@ function updatePortfolioFilters(lang) {
     ).textContent =
         t.all;
 
+    document.getElementById(
+        "title-search"
+    ).placeholder =
+        t.searchPlaceholder;
+
     document
         .querySelectorAll(
             '[data-filter-type="role"]'
