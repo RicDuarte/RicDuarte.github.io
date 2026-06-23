@@ -1,6 +1,8 @@
 const portfolioTranslations = {
 
     pt: {
+        searchPlaceholder: "🔍 Procurar título...",
+        
         "Tradução":
             "Tradução",
         
@@ -148,6 +150,8 @@ const portfolioTranslations = {
     },
 
     en: {
+        searchPlaceholder: "🔍 Search title...",
+        
         "Tradução":
             "Translation",
         
