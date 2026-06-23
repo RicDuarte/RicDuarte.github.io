@@ -30,7 +30,10 @@ const portfolioContent = {
 
         2026: [
             {
-                title: "Berlin and The Lady With an Ermine",
+				title: {
+					pt: "Berlim e a Dama com Arminho",
+					en: "Berlin and The Lady With an Ermine"
+				}
 
                 image:
                     "../images/berlim2.jpg",
@@ -75,7 +78,7 @@ const portfolioContent = {
                 video: "https://www.youtube.com/watch?v=FpAhwL91HyA",
 
                 role:
-                    "Revisão"
+                    "Tradução"
             },
 
             {
