@@ -59,7 +59,10 @@ const portfolioContent = {
             },
 
             {
-                title: "Bait",
+				title: {
+					pt: "Bait",
+					en: "Bait"
+				},
 
                 image:
                     "../images/bait.jpg",
@@ -82,7 +85,10 @@ const portfolioContent = {
             },
 
             {
-                title: "Love Overboard",
+                title: {
+					pt: "Amor Borda Fora",
+					en: "Love Overboard"
+				},
 
                 image:
                     "../images/loveoverboard.jpg",
@@ -107,7 +113,10 @@ const portfolioContent = {
             },
 
             {
-                title: "Person of Interest",
+                title: {
+					pt: "Sob Suspeita",
+					en: "Person of Interest"
+				},
 
                 image:
                     "../images/personofinterest.jpg",
@@ -136,7 +145,10 @@ const portfolioContent = {
         2025: [
 
             {
-                title: "Between Lands",
+                title: {
+					pt: "Entre Terras",
+					en: "Between Lands"
+				},
 
                 image:
                     "../images/entretierras.jpg",
@@ -164,7 +176,10 @@ const portfolioContent = {
 		2024: [
 
             {
-                title: "Outer Range - S2",
+                title: {
+					pt: "Fora de Alcance - T2",
+					en: "Outer Range - S2"
+				},
 
                 image:
                     "../images/outerrange.jpg",
@@ -192,7 +207,10 @@ const portfolioContent = {
 		2023: [
 
             {
-                title: "Berlin and the Paris Jewels",
+                title: {
+					pt: "Berlim e as Joias de Paris",
+					en: "Berlin and the Paris Jewels"
+				},
 
                 image:
                     "../images/berlimparis.jpg",
@@ -222,7 +240,10 @@ const portfolioContent = {
 		2022: [
 
             {
-                title: "Gannibal",
+                title: {
+					pt: "Gannibal",
+					en: "Gannibal"
+				},
 
                 image:
                     "../images/gannibal.jpg",
@@ -250,7 +271,10 @@ const portfolioContent = {
 		2021: [
 
             {
-                title: "Money Heist - T5",
+                title: {
+					pt: "La Casa de Papel - T5",
+					en: "Money Heist - S5"
+				},
 
                 image:
                     "../images/casadepapel.jpg",
@@ -278,7 +302,10 @@ const portfolioContent = {
 		2020: [
 
             {
-                title: "Vis a Vis - T5",
+                title: {
+					pt: "Vis a Vis - T5",
+					en: "Locked Up - S5"
+				},
 
                 image:
                     "../images/visavis.jpg",
@@ -306,7 +333,10 @@ const portfolioContent = {
 		2019: [
 
             {
-                title: "Memories of Alhambra",
+                title: {
+					pt: "Memórias de Alhambra",
+					en: "Memories of Alhambra"
+				},
 
                 image:
                     "../images/memoriesofalhambra.jpg",
@@ -337,7 +367,10 @@ const portfolioContent = {
 		2018: [
 
 			{
-                title: "Steven Universe",
+                title: {
+					pt: "Steven Universe",
+					en: "Steven Universe"
+				},
 
                 image:
                     "../images/stevenuniverse.jpg",
@@ -367,7 +400,10 @@ const portfolioContent = {
 		2017: [
 
             {
-                title: "Women at War 1939-1945",
+				title: {
+					pt: "Women at War 1939-1945",
+					en: "Women at War 1939-1945"
+				},
 
                 image:
                     "../images/womenatwar.jpg",
