@@ -289,39 +289,35 @@ function renderPortfolio() {
                     return false;
                 
                 }
-                if (currentFilters.search !== "") {
+                const lang =
+    localStorage.getItem("language") || "pt";
+
+                    const projectTitle =
+                        typeof project.title === "object"
+                            ? project.title[lang]
+                            : project.title;
                     
-                        const lang =
-                            localStorage.getItem("language") || "pt";
+                    if (
                     
-                        const title =
-                            project.title[lang];
+                        currentFilters.search !== "" &&
                     
-                        if (
-                            !title
-                                .toLowerCase()
-                                .includes(
-                                    currentFilters.search
-                                        .toLowerCase()
-                                )
-                        ) {
+                        !projectTitle
+                            .toLowerCase()
+                            .includes(
+                                currentFilters.search
+                                    .toLowerCase()
+                            )
                     
-                            return false;
+                    ) {
                     
-                        }
+                        return false;
                     
                     }
-                    {
-                    
-                            return false;
-                    
-                    }
-
-                visibleProjects++;
-
-                return true;
-
-            })
+                    visibleProjects++;
+    
+                    return true;
+    
+                })
             .forEach(project => {
 
                 carousel.innerHTML += `
