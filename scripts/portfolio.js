@@ -284,22 +284,33 @@ function renderPortfolio() {
                     return false;
                 
                 }
-                if (
-
-                    currentFilters.search !== "" &&
-                
-                    !project.title
-                        .toLowerCase()
-                        .includes(
-                            currentFilters.search
+                if (currentFilters.search !== "") {
+                    
+                        const lang =
+                            localStorage.getItem("language") || "pt";
+                    
+                        const title =
+                            project.title[lang];
+                    
+                        if (
+                            !title
                                 .toLowerCase()
-                        )
-                
-                ) {
-                
-                    return false;
-                
-                }
+                                .includes(
+                                    currentFilters.search
+                                        .toLowerCase()
+                                )
+                        ) {
+                    
+                            return false;
+                    
+                        }
+                    
+                    }
+                    {
+                    
+                            return false;
+                    
+                    }
 
                 visibleProjects++;
 
