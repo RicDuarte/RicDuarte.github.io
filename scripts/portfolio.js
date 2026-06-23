@@ -373,7 +373,11 @@ function renderPortfolio() {
 
                             <div class="project-title">
 
-                                ${project.title}
+                                ${
+                                    project.title[
+                                        localStorage.getItem("language") || "pt"
+                                    ]
+                                }
 
                             </div>
 
