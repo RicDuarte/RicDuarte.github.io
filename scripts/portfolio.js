@@ -331,7 +331,13 @@ function renderPortfolio() {
 
                             <img
                                 src="${project.image}"
-                                alt="${project.title}">
+                                alt="${
+                                typeof project.title === 'object'
+                                    ? project.title[
+                                        localStorage.getItem('language') || 'pt'
+                                      ]
+                                    : project.title
+                            }">
 
                         </div>
 
@@ -386,11 +392,13 @@ function renderPortfolio() {
                             <div class="project-title">
 
                                 ${
-                                    project.title[
-                                        localStorage.getItem("language") || "pt"
-                                    ]
+                                    typeof project.title === "object"
+                                        ? project.title[
+                                            localStorage.getItem("language") || "pt"
+                                          ]
+                                        : project.title
                                 }
-
+                            
                             </div>
 
                             <div class="project-platform">
