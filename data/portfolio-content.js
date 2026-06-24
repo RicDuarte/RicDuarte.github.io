@@ -138,7 +138,88 @@ const portfolioContent = {
 
                 role:
                     "Revisão MTPE"
-            }
+            },
+			
+			{
+				title: {
+					pt: "Tornado",
+					en: "Twister"
+				},
+
+                image:
+                    "../images/twister.jpg",
+
+                age: "12+",
+
+                type: "movie",
+
+                genres: [
+                    "adventure",
+                    "thriller"
+                ],
+
+                platform:
+                "Outros",
+            
+                video: "https://www.youtube.com/watch?v=beHzfQPaTaw",
+
+                role:
+                    "MetadataTranslation",
+            },
+			
+			{
+				title: {
+					pt: "A Vida Secreta das Esposas Mórmons - T4 (alguns episódios)",
+					en: "The Secret Lives of Mormon Wives - S4 (some episodes)"
+				},
+
+                image:
+                    "../images/mormonwives.jpg",
+
+                age: "16+",
+
+                type: "reality",
+
+                genres: [
+                    "reality"
+                ],
+
+                platform:
+                "Disney+",
+            
+                video: "https://www.youtube.com/watch?v=lQ17SM1fANQ",
+
+                role:
+                    "Revisão MTPE",
+            },
+			
+						{
+				title: {
+					pt: "Booba",
+					en: "Booba"
+				},
+
+                image:
+                    "../images/booba.jpg",
+
+                age: "6+",
+
+                type: "series",
+
+                genres: [
+                    "animation",
+					"kids",
+					"adventure"
+                ],
+
+                platform:
+                "Disney+",
+            
+                video: "https://www.youtube.com/watch?v=1qrB1w_-VQo",
+
+                role:
+                    "Metadata - Translation",
+            },
 
         ],
 
