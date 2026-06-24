@@ -42,7 +42,7 @@ const portfolioTranslations = {
                 "nos",
         
             "Outros":
-                "noutros"
+                ""
         
         },
     
