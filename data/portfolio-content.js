@@ -164,7 +164,7 @@ const portfolioContent = {
                 video: "https://www.youtube.com/watch?v=beHzfQPaTaw",
 
                 role:
-                    "MetadataTranslation",
+                    "metadataTranslation",
             },
 			
 			{
@@ -178,7 +178,7 @@ const portfolioContent = {
 
                 age: "16+",
 
-                type: "reality",
+                type: "series",
 
                 genres: [
                     "reality"
@@ -193,7 +193,7 @@ const portfolioContent = {
                     "Revisão MTPE",
             },
 			
-						{
+			{
 				title: {
 					pt: "Booba",
 					en: "Booba"
@@ -218,8 +218,36 @@ const portfolioContent = {
                 video: "https://www.youtube.com/watch?v=1qrB1w_-VQo",
 
                 role:
-                    "Metadata - Translation",
+                    "metadataTranslation",
             },
+			
+			{
+				title: {
+					pt: "The Assassin",
+					en: "The Assassin"
+				},
+
+                image:
+                    "../images/theassassin.jpg",
+
+                age: "16+",
+
+                type: "series",
+
+                genres: [
+                    "crime",
+					"thriller"
+                ],
+
+                platform:
+                "Prime Video",
+            
+                video: "https://www.youtube.com/watch?v=iJukbRaXqhs",
+
+                role:
+                    "Tradução",
+            },
+			
 
         ],
 
