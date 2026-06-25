@@ -108,12 +108,30 @@ const portfolioTranslations = {
     
         spanish:
             "Espanhol",
+
+        french:
+            "Francês",
+
+        italian:
+            "Italiano",
+
+        turkish:
+            "Turco",
+
+        indian:
+            "Indiano",
     
         horror:
             "Terror",
+
+        action:
+            "Ação",
     
         adventure:
             "Aventura",
+
+        anime:
+            "Animé",
     
         documentary:
             "Documentário",
@@ -126,6 +144,9 @@ const portfolioTranslations = {
         
         comedy:
             "Comédia",
+
+        dark:
+            "Sombrio",
 
         reality:
             "Reality Show",
@@ -257,12 +278,30 @@ const portfolioTranslations = {
     
         spanish:
             "Spanish",
+
+        french:
+            "French",
+
+        italian:
+            "Italian",
+
+        turkish:
+            "Turkish",
+
+        indian:
+            "Indian",
     
         horror:
             "Horror",
+
+        action:
+            "Action",
     
         adventure:
             "Adventure",
+
+        anime:
+            "Anime",
     
         documentary:
             "Documentary",
@@ -275,6 +314,9 @@ const portfolioTranslations = {
         
         comedy:
             "Comedy",
+
+        dark:
+            "Dark",
         
         reality:
             "Reality Show",
