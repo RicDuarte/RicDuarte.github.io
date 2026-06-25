@@ -57,6 +57,32 @@ const portfolioContent = {
                 role:
                     "Tradução",
             },
+			
+			{
+				title: {
+					pt: "Um Novo Eu - T3",
+					en: "Another Self - S3"
+				},
+
+                image:
+                    "../images/anotherselfs3.jpg",
+
+                age: "13+",
+
+                type: "series",
+
+                genres: [
+                    "drama"
+                ],
+
+                platform:
+                "Netflix",
+            
+                video: "https://www.youtube.com/watch?v=9h620asn9wg",
+
+                role:
+                    "Tradução",
+            },
 
             {
 				title: {
