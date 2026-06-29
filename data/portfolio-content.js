@@ -84,6 +84,35 @@ const portfolioContent = {
                     "Tradução",
             },
 
+			{
+				title: {
+					pt: "O Meu Real Inimigo",
+					en: "My Royal Nemesis"
+				},
+
+                image:
+                    "../images/myroyalnemesis.jpg",
+
+                age: "13+",
+
+                type: "miniseries",
+
+                genres: [
+                    "drama",
+					"korean",
+					"comedy",
+					"romance"
+                ],
+
+                platform:
+                "Netflix",
+            
+                video: "https://www.youtube.com/watch?v=C5o0fYFNnWw",
+
+                role:
+                    "Tradução",
+            },
+
             {
 				title: {
 					pt: "Bait",
