@@ -112,6 +112,32 @@ const portfolioContent = {
                 role:
                     "Tradução",
             },
+			
+			{
+				title: {
+					pt: "Chumbak: A Boa Vizinhança",
+					en: "Chumbak"
+				},
+
+                image:
+                    "../images/chumbak.jpg",
+
+                age: "13+",
+
+                type: "series",
+
+                genres: [
+                    "comedy"
+                ],
+
+                platform:
+                    "Netflix",
+                
+                video: "https://www.youtube.com/watch?v=69auJ1F1EsE",
+
+                role:
+                    "Tradução"
+            },
 
             {
 				title: {
