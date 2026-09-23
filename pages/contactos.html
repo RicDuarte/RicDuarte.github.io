@@ -22,15 +22,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 </head>
 
   <body>
-  <nav>
-    <a href="../index.html"
-       class="logo">
-      RICARDO DUARTE
+    <nav>
+
+    <a href="../index.html" class="logo">
+        RICARDO DUARTE
     </a>
 
-    <div class="nav-links">
+    <div class="mobile-menu-button"
+         onclick="toggleMobileMenu()">
+        ☰
+    </div>
 
-    <a
+    <div class="mobile-menu">
+
+        <div class="nav-links">
+
+            <a
         id="nav-about" href="../index.html">
     </a>
     
@@ -42,27 +49,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         id="nav-contact" href="contactos.html">
     </a>
 
-    </div>
-    
-    <div class="language-switch">
-    
-        <span
+        </div>
+
+        <div class="language-switch">
+
+            <span
         class="lang-option"
         data-lang="pt"
         onclick="loadLanguage('pt')">
         PT
     </span>
-    
-    <span class="lang-separator">/</span>
-    
-    <span
-        class="lang-option"
-        data-lang="en"
-        onclick="loadLanguage('en')">
-        EN
-    </span>
-    
+
+        </div>
+
     </div>
+
 </nav>
 
 <main>
