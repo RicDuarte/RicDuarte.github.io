@@ -298,3 +298,37 @@ footer{
 
   width:100%;
 }
+
+/* =========================
+   RESPONSIVIDADE GLOBAL
+========================= */
+
+@media (max-width: 1199px) {
+
+    :root {
+
+        --page-padding: 36px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    :root {
+
+        --page-padding: 24px;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    :root {
+
+        --page-padding: 18px;
+
+    }
+
+}
