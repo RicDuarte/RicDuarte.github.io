@@ -17,48 +17,33 @@
 
 <body>
 
-<nav>
+  <nav>
 
-  <a href="../index.html"
-     class="logo">
-    RICARDO DUARTE
-  </a>
-
-  <div class="nav-links">
-
-    <a id="nav-about"
-       href="../index.html">
+    <a href="../index.html" class="logo">
+        RICARDO DUARTE
     </a>
 
-    <a id="nav-portfolio"
-       href="portfolio.html">
-    </a>
+    <div class="mobile-menu-button"
+         onclick="toggleMobileMenu()">
+        ☰
+    </div>
 
-    <a id="nav-contact"
-       href="contactos.html">
-    </a>
+    <div class="mobile-menu">
 
-  </div>
+        <div class="nav-links">
+          <a id="nav-about" href="../index.html"></a>
+          <a id="nav-portfolio" href="portfolio.html"></a>
+          <a id="nav-contact" href="contactos.html"></a>
 
-  <div class="language-switch">
+        </div>
 
-    <span
-      class="lang-option"
-      data-lang="pt"
-      onclick="loadLanguage('pt')">
-      PT
-    </span>
+        <div class="language-switch">
+          <span class="lang-option" data-lang="pt" onclick="loadLanguage('pt')">PT</span>
+          <span class="lang-separator">/</span>
 
-    <span class="lang-separator">/</span>
-
-    <span
-      class="lang-option"
-      data-lang="en"
-      onclick="loadLanguage('en')">
-      EN
-    </span>
-
-  </div>
+          <span class="lang-option" data-lang="en" onclick="loadLanguage('en')">EN</span>
+        </div>
+    </div>
 
 </nav>
 
