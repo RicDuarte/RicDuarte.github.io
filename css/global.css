@@ -354,14 +354,18 @@ footer{
     }
 
     .logo {
-
-        position: relative;
-
-        left: auto;
-        top: auto;
-
-        font-size: 1.8rem;
-
+    
+        position: absolute;
+    
+        left: 50%;
+        top: 16px;
+    
+        transform: translateX(-50%);
+    
+        font-size: clamp(1.45rem, 5vw, 1.8rem);
+    
+        white-space: nowrap;
+    
     }
 
     .mobile-menu-button {
