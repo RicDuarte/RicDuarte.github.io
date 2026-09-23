@@ -584,7 +584,7 @@ nav.mobile-open .mobile-menu {
         left: 50% !important;
         top: 50% !important;
 
-        transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, calc(-50% + 2px)) !important;
 
         font-size: clamp(1.45rem, 5vw, 1.8rem);
 
