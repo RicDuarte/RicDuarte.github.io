@@ -479,3 +479,33 @@ footer{
     }
 
 }
+
+/* =========================
+   MOBILE MENU - DESKTOP
+========================= */
+
+@media (min-width: 769px) {
+
+    .mobile-menu {
+
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+    }
+
+    .mobile-menu .nav-links {
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        gap: 55px;
+
+    }
+
+}
