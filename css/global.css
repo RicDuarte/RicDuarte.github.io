@@ -535,3 +535,34 @@ nav.mobile-open .mobile-menu {
     }
 
 }
+
+/* =========================
+   FOOTER RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+    footer {
+        padding: 55px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-content p {
+        font-size: 0.85rem;
+    }
+
+    .footer-links {
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+}
