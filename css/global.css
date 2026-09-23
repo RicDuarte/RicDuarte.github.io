@@ -366,40 +366,47 @@ footer{
 
     .mobile-menu-button {
 
-        display: flex;
+    display: flex;
 
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
 
-        margin-left: auto;
+    margin-left: auto;
 
-        width: 42px;
-        height: 42px;
+    width: 42px;
+    height: 42px;
 
-        border:
-            1px solid rgba(255,255,255,0.12);
+    border:
+        1px solid rgba(255,255,255,0.12);
 
-        border-radius: 50%;
+    border-radius: 50%;
 
-        color: white;
+    color: white;
 
-        font-size: 1.2rem;
+    font-size: 1.2rem;
 
-        cursor: pointer;
+    cursor: pointer;
 
-        user-select: none;
+    user-select: none;
 
-        transition:
-            background 0.25s ease,
-            border-color 0.25s ease;
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.3s ease;
 
-    }
+}
 
-    .mobile-menu-button:hover {
+.mobile-menu-button:hover {
 
-        border-color: #e50914;
+    border-color: #e50914;
 
-    }
+}
+
+nav.mobile-open .mobile-menu-button {
+
+    transform: rotate(90deg);
+
+}
 
     .mobile-menu {
 
